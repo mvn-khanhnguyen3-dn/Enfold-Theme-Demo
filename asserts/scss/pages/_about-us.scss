@@ -1,0 +1,96 @@
+.section-about-us {
+    text-align: center;
+    background-color: #fafafa;
+    padding: convertPxToRem(50px) 0;
+    hr {
+      width: convertPxToRem(300px);
+      text-align: center;
+      margin: 2rem auto;
+      position: relative;
+      background-color: #fcfcfc;
+    }
+    span {
+      border-radius: 20px;
+      height: 9px;
+      width: 9px;
+      color: #ccc;
+      border-width: 2px;
+      border-style: solid;
+      position: absolute;
+      left: 50%;
+      margin-top: -2.4rem;
+      background-color: #262626;
+    }
+    .about-us-title {
+      line-height: convertPxToRem(50px);
+      letter-spacing: convertPxToRem(0.5px);
+    }
+    .about-us-content {
+      padding-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: justify;
+      gap: convertPxToRem(50px);
+      .about-us-item {
+        display: flex;
+        width: calc(100% / 2 - 5rem);
+        gap: 1rem;
+        line-height: convertPxToRem(30px);
+        img {
+          width: convertPxToRem(100px);
+          height: convertPxToRem(100px);
+          border-radius: 50%;
+        }
+        .item-desc {
+          line-height: convertPxToRem(20px);
+        }
+      }
+    }
+  }
+  .section-contact-us {
+    text-align: center;
+    padding: convertPxToRem(50px) 0;
+    background-repeat: no-repeat;
+    background-image: url(https://kriesi.at/themes/enfold/wp-content/uploads/sites/37/2013/04/room.jpg);
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+    line-height: convertPxToRem(50px);
+    .contact-us-title,
+    .contact-us-title-desc {
+      color: #fff;
+    }
+    .contact-us-title {
+      letter-spacing: convertPxToRem(5px);
+      font-size: convertPxToRem(30px);
+    }
+    .contact-us-title-desc {
+      padding-bottom: convertPxToRem(80px);
+    }
+    .contact-us-content {
+      justify-content: center;
+      gap: 10%;
+      .contact-us-box {
+        background-color: #fff;
+        padding: convertPxToRem(20px);
+        border-radius: convertPxToRem(8px);
+        position: relative;
+
+        .icon-contact-us {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #c3512f;
+          height: convertPxToRem(65px);
+          width: convertPxToRem(65px);
+          line-height: convertPxToRem(65px);
+          font-size: convertPxToRem(30px);
+          text-align: center;
+          border-radius: convertPxToRem(500px);
+          z-index: 5;
+          color: #fff;
+        }
+      }
+    }
+  }

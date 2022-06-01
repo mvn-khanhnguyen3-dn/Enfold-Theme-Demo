@@ -1,0 +1,29 @@
+.section-mobile {
+    margin: convertPxToRem(5px) 0;
+    padding: convertPxToRem(50px) 0;
+    .container {
+      gap: convertPxToRem(50px);
+    }
+    hr {
+      width: 15rem;
+      text-align: justify;
+      margin: 2rem 0;
+    }
+    img {
+      min-width: 45%;
+    }
+    .mobile-content {
+      .mobile-title {
+        letter-spacing: convertPxToRem(0.5px);
+      }
+      .mobile-desc {
+        line-height: convertPxToRem(30px);
+        font-size: convertPxToRem(16px);
+        p {
+          &:first-child {
+            padding-bottom: convertPxToRem(15px);
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,32 @@
+.section-showcasing {
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    min-width: 100%;
+    padding: convertPxToRem(50px) 0;
+    .showcasing-title {
+      line-height: convertPxToRem(100px);
+    }
+    .showcasing-desc {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: convertPxToRem(50px);
+    }
+    .showcasing-card-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: convertPxToRem(1px);
+      .card-item {
+        border: 1px solid #e1e1e1;
+        .item-desc {
+          text-align: justify;
+          font-size: convertPxToRem(15px);
+          padding: convertPxToRem(15px);
+        }
+      }
+    }
+    .view-more {
+      line-height: convertPxToRem(100px);
+    }
+  }
