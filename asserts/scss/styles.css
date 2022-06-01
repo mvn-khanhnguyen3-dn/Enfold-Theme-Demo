@@ -1098,109 +1098,6 @@ table th, table td {
 }
 
 .page-main {
-  padding: 30px 0px;
-  padding: 1.875rem 0rem;
-  min-height: 80vh;
-}
-
-.page-footer {
-  padding: 10px;
-  padding: 0.625rem;
-  background-color: #222222;
-  color: #dddddd;
-}
-
-.page-footer .container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 5%;
-}
-
-.page-footer ul li {
-  margin: 10px 0;
-}
-
-.page-footer .footer-left,
-.page-footer .footer-middle-one,
-.page-footer .footer-middle-two,
-.page-footer .footer-right {
-  max-width: calc(100% / 4);
-}
-
-.page-footer .footer-middle-one .footer-middle-content .content-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page-footer .footer-middle-one .footer-middle-content .content-item img {
-  padding-right: 10px;
-}
-
-.page-footer .footer-title {
-  padding: 1.5rem 0;
-}
-
-.page-footer .footer-left-socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.page-footer .footer-left-socials .social-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 2rem;
-}
-
-.page-footer .footer-left-socials .social-item i {
-  color: #fff;
-  background-color: #46d4fe;
-  border-color: #46d4fe;
-  text-shadow: 1px 1px 1px #17acd8;
-  padding: 10px;
-  text-align: center;
-  margin: 5px;
-}
-
-.page-footer .footer-left-socials .social-item .fa-rss {
-  background-color: #ffa133;
-  border-color: #ffa133;
-  text-shadow: 1px 1px 1px #d18021;
-}
-
-.page-footer .footer-middle-list .list-item {
-  display: inline-block;
-  border: 1px solid #dddddd;
-  padding: 5px;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 500;
-}
-
-.page-footer .footer-middle-category-list .list-item {
-  color: #fff;
-  font-weight: 500;
-}
-
-.page-footer .footer-right-list .list-item span {
-  font-weight: 500;
-  color: #fff;
-}
-
-.is-hidden {
-  display: none;
-}
-
-.page-main {
   padding: 0;
 }
 
@@ -2105,5 +2002,102 @@ table th, table td {
   .page-main .section-slider .wrapper .slider-content .iphone-hand {
     left: 0;
   }
+}
+
+.page-footer {
+  padding: 10px;
+  padding: 0.625rem;
+  background-color: #222222;
+  color: #dddddd;
+}
+
+.page-footer .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+}
+
+.page-footer ul li {
+  margin: 10px 0;
+}
+
+.page-footer .footer-left,
+.page-footer .footer-middle-one,
+.page-footer .footer-middle-two,
+.page-footer .footer-right {
+  max-width: calc(100% / 4);
+}
+
+.page-footer .footer-middle-one .footer-middle-content .content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-footer .footer-middle-one .footer-middle-content .content-item img {
+  padding-right: 10px;
+}
+
+.page-footer .footer-title {
+  padding: 1.5rem 0;
+}
+
+.page-footer .footer-left-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-footer .footer-left-socials .social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 2rem;
+}
+
+.page-footer .footer-left-socials .social-item i {
+  color: #fff;
+  background-color: #46d4fe;
+  border-color: #46d4fe;
+  text-shadow: 1px 1px 1px #17acd8;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.page-footer .footer-left-socials .social-item .fa-rss {
+  background-color: #ffa133;
+  border-color: #ffa133;
+  text-shadow: 1px 1px 1px #d18021;
+}
+
+.page-footer .footer-middle-list .list-item {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.page-footer .footer-middle-category-list .list-item {
+  color: #fff;
+  font-weight: 500;
+}
+
+.page-footer .footer-right-list .list-item span {
+  font-weight: 500;
+  color: #fff;
+}
+
+.is-hidden {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
