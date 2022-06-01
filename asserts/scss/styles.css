@@ -1863,7 +1863,7 @@ table th, table td {
   .page-footer .footer-middle-one,
   .page-footer .footer-middle-two,
   .page-footer .footer-right {
-    max-width: 100%;
+    min-width: 100%;
   }
   .page-main .section-slider .wrapper .slider-content .mac {
     top: 20%;
