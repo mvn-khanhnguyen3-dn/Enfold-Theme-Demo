@@ -11,6 +11,9 @@
       margin: 10px 0;
     }
   }
+  h6 {
+    width: 5rem;
+  }
   .footer-left,
   .footer-middle-one,
   .footer-middle-two,
@@ -21,14 +24,19 @@
     .footer-middle-content {
       .content-item {
         display: flex;
+        gap: 10px;
         img {
-          padding-right: 10px;
+          // margin: 0 10px;
+          border: 4px solid #444444;
+          color: #dddddd;
         }
       }
     }
   }
   .footer-title {
     padding: 1.5rem 0;
+    color: #919191;
+    font-size: 16px;
   }
   .footer-left-socials {
     display: flex;

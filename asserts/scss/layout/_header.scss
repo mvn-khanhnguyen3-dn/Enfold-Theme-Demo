@@ -18,7 +18,7 @@
   .menu-list {
     .menu-item {
       display: inline-block;
-      padding: 0 convertPxToRem(13px);
+      padding: 0 convertPxToRem(12.5px);
       line-height: convertPxToRem(100px);
       font-size: convertPxToRem(13px);
       &:first-child,
