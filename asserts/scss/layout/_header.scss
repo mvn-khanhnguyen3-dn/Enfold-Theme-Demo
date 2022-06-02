@@ -1,8 +1,10 @@
 .page-header {
   @include pxRem(padding, 10);
-  background: map-get($colors, bg-gray);
+  background: map-get($colors, white);
+  border-color: #e1e1e1;
   text-align: center;
   padding: 0;
+  line-height: convertPxToRem(88px);
   .container {
     display: flex;
     justify-content: space-between;
@@ -10,23 +12,25 @@
     padding: 0 convertPxToRem(50px);
   }
   .header-logo {
-    max-width: convertPxToRem(300px);
-    max-height: convertPxToRem(100px);
+    max-width: convertPxToRem(192px);
+    max-height: convertPxToRem(88px);
   }
   .menu-list {
     .menu-item {
       display: inline-block;
-      padding-left: convertPxToRem(20px);
+      padding: 0 convertPxToRem(13px);
       line-height: convertPxToRem(100px);
-      &:first-child {
-        padding-left: convertPxToRem(10px);
-        padding-right: convertPxToRem(10px);
+      font-size: convertPxToRem(13px);
+      &:first-child,
+      &:nth-child(6) {
+        text-align: center;
         border-bottom: convertPxToRem(3px) solid #c3512f;
       }
       a {
         font-size: convertPxToRem(15px);
         font-weight: 600;
         letter-spacing: convertPxToRem(0.5px);
+        color: #646464;
       }
     }
   }
