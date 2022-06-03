@@ -111,7 +111,7 @@ summary {
 }
 
 .btn-primary {
-  padding: 15px 30px;
+  padding: 15px 30px 13px;
   background-color: #ffffff;
   color: #888888;
   border: 0.3px solid #888888;
@@ -120,6 +120,7 @@ summary {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   text-align: center;
+  line-height: 15.6px;
 }
 
 .btn-primary i {
@@ -1364,17 +1365,17 @@ table th, table td {
 }
 
 .page-main strong {
-  color: #df5c34;
+  color: #c3512f;
 }
 
 .page-main p {
   color: #666666;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .page-main p,
 .page-main h6 {
-  font-size: 0.8125rem;
+  font-size: 0.8125rem !important;
 }
 
 .page-main .section-slider .slide {
@@ -1655,26 +1656,23 @@ table th, table td {
 
 .page-main .slider-content-list .list-item {
   width: calc(100% / 3);
-  line-height: 1.875rem;
-  padding: 0.1875rem 0;
+  margin: 0.625rem 0px 0px;
 }
 
 .page-main .slider-content-list .list-item .item-title {
   letter-spacing: 0.05rem;
   color: #222222;
-  font-size: 1rem;
+  font-size: 1.01562rem;
   font-weight: 600;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1px;
   line-height: 1.125rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.9375rem;
   text-transform: uppercase;
+  padding: 2px 0px 0px;
 }
 
 .page-main .slider-content-list .list-item .item-desc {
-  font-size: 1rem;
-  color: #666666;
-  line-height: 1.25rem;
-  margin: 0.8125rem 0 0;
+  line-height: 1.34375rem;
 }
 
 .page-main .section-showcasing {
@@ -1693,19 +1691,20 @@ table th, table td {
 .page-main .section-showcasing .showcasing-title {
   color: #444444;
   font-size: 1.75rem;
-  letter-spacing: 0.1rem;
-  font-weight: 900;
-  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.925rem;
 }
 
 .page-main .section-showcasing .showcasing-desc {
   margin: 0 auto;
   color: #888888;
+  line-height: 1.34062rem;
+  margin: 0.71875rem 0;
 }
 
 .page-main .section-showcasing .showcasing-card-list {
   padding-top: 4.375rem;
-  padding-bottom: 0.9375rem;
 }
 
 .page-main .section-showcasing .showcasing-card-list .card-item {
@@ -1719,12 +1718,12 @@ table th, table td {
   color: #666666;
 }
 
-.page-main .section-showcasing .view-more {
-  line-height: 2.8125rem;
+.page-main .section-showcasing hr {
+  margin-top: 3.125rem;
+  width: 35%;
 }
 
 .page-main .section-feature .container {
-  gap: 3.75rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1732,46 +1731,56 @@ table th, table td {
 }
 
 .page-main .section-feature .feature-img {
-  width: 55%;
+  width: calc(100% / 2);
   border: 0.125rem solid #e1e1e1;
-  padding: 0.375rem;
   height: 100%;
 }
 
 .page-main .section-feature .feature-img img {
   min-width: 100%;
-}
-
-.page-main .section-feature .feature-img .img-list {
-  gap: 0.3125rem;
+  padding: 7px;
 }
 
 .page-main .section-feature .feature-img .img-list .img-item {
   width: calc(100% / 7);
-  border: 0.125rem solid #e1e1e1;
+  text-align: center;
+  border-top: 0.0625rem solid #e1e1e1;
+  border-right: 0.0625rem solid #e1e1e1;
 }
 
 .page-main .section-feature .feature-img .img-list .img-item img {
-  max-width: 100%;
-  padding: 0.375rem;
+  width: 69px;
+  height: 69px;
+  padding: 7px;
+  aspect-ratio: auto 80 / 80;
   cursor: pointer;
 }
 
+.page-main .section-feature .feature-img .img-list .img-item:first-child {
+  border-left: none;
+}
+
+.page-main .section-feature .feature-img .img-list .img-item:last-child {
+  border-right: none;
+}
+
 .page-main .section-feature .feature-content {
-  width: 50%;
+  width: calc(100% / 2);
+  margin-left: 62px;
 }
 
 .page-main .section-feature .feature-content .feature-content-title {
-  margin: 0 0 1.875rem 0;
+  margin: 0px 0px 10px;
   letter-spacing: 0.0625rem;
   color: #222222;
   font-size: 1.75rem;
+  line-height: 1.925rem;
 }
 
 .page-main .section-feature .feature-content .feature-content-desc,
 .page-main .section-feature .feature-content .feature-item {
-  line-height: 1.5625rem;
-  padding-bottom: 0.625rem;
+  line-height: 1.34062rem;
+  margin: 11.05px 0px;
   color: #666666;
 }
 
@@ -1781,20 +1790,17 @@ table th, table td {
 }
 
 .page-main .section-feature .feature-content .feature-list {
-  padding-left: 1.875rem;
+  padding-left: 0.9375rem;
 }
 
 .page-main .section-feature .feature-content .feature-list .feature-item {
   list-style: outside;
-}
-
-.page-main .section-feature .feature-content .btn-learn-more {
-  margin-left: 1.875rem;
+  padding: 3px 0px;
 }
 
 .page-main .section-feature .feature-content hr {
-  margin: 2.8125rem 0 2.8125rem 1.875rem;
-  width: 40%;
+  margin: 2.8125rem 0;
+  width: 35%;
 }
 
 .page-main .section-about {
@@ -1831,7 +1837,7 @@ table th, table td {
 }
 
 .page-main .section-about .about-left .about-left-list li p {
-  line-height: 1.5625rem;
+  line-height: 1.75rem;
 }
 
 .page-main .section-about .about-left .about-left-list li:first-child {
@@ -1843,8 +1849,12 @@ table th, table td {
 }
 
 .page-main .section-about .about-right .about-item {
-  padding-bottom: 3.125rem;
-  line-height: 2.625rem;
+  padding-bottom: 3.4375rem;
+  line-height: 3.125rem;
+}
+
+.page-main .section-about .about-right .about-item:last-child {
+  padding: 0;
 }
 
 .page-main .section-about .about-right .about-item .about-content {
@@ -1902,7 +1912,7 @@ table th, table td {
 }
 
 .page-main .section-mobile hr {
-  width: 15rem;
+  width: 35%;
   text-align: justify;
   margin: 2rem 0;
 }
@@ -1919,7 +1929,7 @@ table th, table td {
 }
 
 .page-main .section-mobile .mobile-content .mobile-desc {
-  line-height: 1.5625rem;
+  line-height: 1.875rem;
 }
 
 .page-main .section-mobile .mobile-content .mobile-desc p:first-child {
@@ -1941,7 +1951,7 @@ table th, table td {
 }
 
 .page-main .section-about-us hr {
-  width: 18.75rem;
+  width: 40%;
   text-align: center;
   margin: 2.5rem auto;
   position: relative;
