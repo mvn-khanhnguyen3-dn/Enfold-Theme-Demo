@@ -2,7 +2,7 @@
 $grid-columns: 12;
 @mixin build-grid($size) {
   @for $i from 1 through $grid-columns {
-    @if $size != '' {
+    @if $size != "" {
       .col-#{$size}-#{$i} {
         width: percentage($i / $grid-columns);
       }
@@ -15,10 +15,8 @@ $grid-columns: 12;
 }
 // End mixins for build grid
 $grid-gutter: 10px;
-$container-width: 1200px;
+$container-width: 1130px;
 .container {
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
   margin: 0 auto;
   max-width: $container-width;
 }
@@ -45,7 +43,7 @@ $container-width: 1200px;
 
 /* Grid for all screen
  * Ex: col-1, col-2 */
-@include build-grid('');
+@include build-grid("");
 
 /* Grid for screen min-width: $small
  * Ex: col-small-1, col-small-2 */

@@ -1,0 +1,32 @@
+@keyframes loop-slide {
+  from {
+    transform: translateX(-100rem) rotate(100deg);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes loop {
+  from {
+    transform: translateX(100rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes loop-iphone {
+  from {
+    transform: translateX(-100rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes loop-mac {
+  from {
+    transform: translateY(100rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,24 +1,29 @@
 .page-footer {
-  @include pxRem(padding, 10);
   background-color: #222222;
   color: #dddddd;
   .container {
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-between;
+    padding: 0 50px;
+    gap: 4rem;
   }
   ul {
     li {
       margin: 10px 0;
+      font-size: 13px;
     }
   }
+  p {
+    font-size: 13px;
+  }
   h6 {
-    width: 5rem;
+    width: 100%;
   }
   .footer-left,
   .footer-middle-one,
   .footer-middle-two,
   .footer-right {
-    max-width: calc(100% / 4);
+    width: calc(100% / 4);
+    padding: 25px 0;
   }
   .footer-middle-one {
     .footer-middle-content {
@@ -38,22 +43,37 @@
     color: #919191;
     font-size: 16px;
   }
+  .footer-left {
+    .footer-left-desc {
+      padding-bottom: 30px;
+    }
+  }
   .footer-left-socials {
     display: flex;
-
     .social-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 2rem;
+      .link-social {
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #919191;
+        width: 5rem;
+        p {
+          font-size: 10px;
+          color: #fff;
+        }
+      }
       i {
         color: #fff;
         background-color: #46d4fe;
         border-color: #46d4fe;
-        text-shadow: 1px 1px 1px #17acd8;
-        padding: 10px;
-        text-align: center;
-        margin: 5px;
+        border-radius: 5px;
+        text-shadow: convertPxToRem(1px) convertPxToRem(1px) convertPxToRem(1px)
+          #17acd8;
+        padding: convertPxToRem(10px);
+        font-size: 16px;
+        margin-right: 10px;
+        &:last-child {
+          margin: 0;
+        }
       }
       .fa-rss {
         background-color: #ffa133;
@@ -65,11 +85,12 @@
   .footer-middle-list {
     .list-item {
       display: inline-block;
-      border: 1px solid #dddddd;
-      padding: 5px;
+      border: convertPxToRem(0.5px) solid #444444;
+      padding: convertPxToRem(5px);
       cursor: pointer;
       color: #fff;
       font-weight: 500;
+      margin: 1px 0;
     }
   }
   .footer-middle-category-list {
@@ -83,6 +104,27 @@
       span {
         font-weight: 500;
         color: #fff;
+      }
+    }
+  }
+  .footer-bottom {
+    margin-top: convertPxToRem(50px);
+    background-color: #333333;
+    color: #eeeeee;
+    padding: convertPxToRem(10px) 0;
+    a {
+      font-size: convertPxToRem(11px);
+      font-weight: 600;
+      color: #fff;
+    }
+    .footer-bottom-right-list {
+      .list-item {
+        display: inline-block;
+        padding: 0 0.5rem;
+        border-left: 1px solid #444444;
+        &:first-child {
+          border: none;
+        }
       }
     }
   }

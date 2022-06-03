@@ -98,8 +98,8 @@
             <img class="slide" src="./asserts/images/slide3.png" alt="slider 1" />
           </picture> -->
         </div>
-        <div class="container">
-          <ul class="content-list">
+        <ul class="slider-content-list">
+          <div class="container flex justify-between">
             <li class="list-item">
               <h3 class="item-title">
                 <i class="fa fa-clock-o" aria-hidden="true"></i>
@@ -133,14 +133,15 @@
                 <strong>all skill levels…</strong>
               </p>
             </li>
-          </ul>
-        </div>
+          </div>
+        </ul>
       </section>
       <section class="section-showcasing">
         <div class="container">
           <h2 class="showcasing-title">
             SHOWCASING YOUR WORK HAS NEVER BEEN MORE FUN
           </h2>
+          <hr />
           <p class="showcasing-desc">
             The Template Builder allows you to build
             <strong>any number</strong> of cool Portfolio layouts, 3 of them are
@@ -148,7 +149,7 @@
             Once you have created one or multiple layouts you like, simply save
             them as template and reuse them as often as you need
           </p>
-          <ul class="showcasing-card-list">
+          <ul class="showcasing-card-list flex justify-center align-center">
             <li class="card-item">
               <img src="./asserts/images/showcasing1.jpg" alt="" />
               <p class="item-desc">Single Portfolio: 2/3 Slider</p>
@@ -162,6 +163,7 @@
               <p class="item-desc">Single Portfolio: Big Slider</p>
             </li>
           </ul>
+          <!-- <hr /> -->
           <a href="#" class="view-more"
             ><strong>View the Full Portfolio here</strong></a
           >
@@ -171,7 +173,7 @@
         <div class="container flex">
           <div class="feature-img">
             <img src="./asserts/images/feature1.jpg" alt="" />
-            <ul class="img-list">
+            <ul class="img-list flex">
               <li class="img-item">
                 <img src="./asserts/images/feature1.jpg" alt="" />
               </li>
@@ -223,6 +225,7 @@
                 iPads, Retina MacBooks, etc
               </li>
             </ul>
+            <hr />
             <button class="btn-primary btn-learn-more">
               <i class="fa fa-info-circle" aria-hidden="true"></i> Learn more...
             </button>
@@ -236,27 +239,37 @@
             <hr />
             <ul class="about-left-list">
               <li class="left-list-item">
-               <p> Lorem ipsum dolor sit amet, consectetuer
-                <strong>adipiscing elit</strong>. Aenean commodo ligula eget
-                dolor. Aenean massa.</p>
-              </li>
-              <li class="left-list-item"><p>Nulla consequat massa quis enim.</p></li>
-              <li class="left-list-item">
-                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                arcu.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer
+                  <strong>adipiscing elit</strong>. Aenean commodo ligula eget
+                  dolor. Aenean massa.
+                </p>
               </li>
               <li class="left-list-item">
-               <p> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                Nullam dictum felis eu pede mollis pretium.</p>
+                <p>Nulla consequat massa quis enim.</p>
               </li>
               <li class="left-list-item">
-                <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi</p>
+                <p>
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                  arcu.
+                </p>
               </li>
               <li class="left-list-item">
-               <p> Aenean <strong>vulputate</strong> eleifend tellus.</p>
+                <p>
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium.
+                </p>
+              </li>
+              <li class="left-list-item">
+                <p>
+                  Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi
+                </p>
+              </li>
+              <li class="left-list-item">
+                <p>Aenean <strong>vulputate</strong> eleifend tellus.</p>
               </li>
               <hr />
-              <button class="btn-primary">
+              <button class="btn-primary btn-checkout">
                 <i class="fa fa-envelope-open" aria-hidden="true"></i> Check out
                 our Team
               </button>
@@ -319,7 +332,7 @@
             src="./asserts/images/iphoneIpad-495x400.png"
             alt=""
           />
-          <div class="mobile-content">
+          <div class="mobile-content flex flex-column justify-between">
             <h2 class="mobile-title">MOBILE READY</h2>
             <hr />
             <div class="mobile-desc">
@@ -336,7 +349,7 @@
               </p>
             </div>
             <hr />
-            <button class="btn-primary">
+            <button class="btn-primary btn-mobile">
               <i class="fa fa-mobile" aria-hidden="true"></i> Mobile Features
             </button>
           </div>
@@ -346,7 +359,7 @@
         <div class="container">
           <h2 class="about-us-title">WHAT OTHERS SAY ABOUT US</h2>
           <hr />
-          <ul class="about-us-content flex">
+          <ul class="about-us-content flex flex-wrap justify-center">
             <li class="about-us-item">
               <img src="./asserts/images/team-1-180x180.jpg" alt="" />
               <div class="item-desc">
@@ -370,8 +383,10 @@
                   justo. Nullam dictum felis eu pede mollis pretium. Integer
                   tincidunt. Cras dapibus.
                 </p>
-                <h6 class="item-name">Anna Vandana</h6>
-                <h6 class="item-position">CEO – <strong>Media Wiki</strong></h6>
+                <h6 class="item-name">
+                  Anna Vandana
+                  <p class="item-position">CEO – <strong>Media Wiki</strong></p>
+                </h6>
               </div>
             </li>
             <li class="about-us-item">
@@ -381,9 +396,11 @@
                   Nulla consequat massa quis enim. Donec pede justo, fringilla
                   vel, aliquet nec, vulputate eget, arcu.
                 </p>
-                <h6 class="item-name">Maxi Milli</h6>
-                <h6 class="item-position">
-                  Public Relations – <strong>Max Mobilcom</strong>
+                <h6 class="item-name">
+                  Maxi Milli
+                  <p class="item-position">
+                    Public Relations – <strong>Max Mobilcom</strong>
+                  </p>
                 </h6>
               </div>
             </li>
@@ -395,9 +412,11 @@
                   justo. Nullam dictum felis eu pede mollis pretium. Integer
                   tincidunt. Cras dapibus.
                 </p>
-                <h6 class="item-name">Dr. Dosist</h6>
-                <h6 class="item-position">
-                  Dean of Medicine – <strong>Doom Inc</strong>
+                <h6 class="item-name">
+                  Dr. Dosist
+                  <p class="item-position">
+                    Dean of Medicine – <strong>Doom Inc</strong>
+                  </p>
                 </h6>
               </div>
             </li>
@@ -410,7 +429,7 @@
           <p class="contact-us-title-desc">
             Here are several ways to contact us
           </p>
-          <div class="contact-us-content flex">
+          <div class="contact-us-content flex justify-center">
             <div class="contact-us-box">
               <i
                 class="fa fa-address-book icon-contact-us"
@@ -449,7 +468,7 @@
       </section>
       <section class="section-brand">
         <div class="container">
-          <ul class="brand-list flex">
+          <ul class="brand-list flex justify-center">
             <li class="brand-item">
               <img src="./asserts/images/kriesi.png" alt="" />
             </li>
@@ -470,25 +489,25 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container flex">
+      <div class="container flex justify-center">
         <div class="footer-left">
           <h4 class="footer-title">INTERESTING LINKS</h4>
           <p class="footer-left-desc">
             Bellow are some interesting links for you! Enjoy your stay :)
           </p>
           <ul class="footer-left-socials">
-            <li class="social-item">
+            <li class="social-item flex align-center justify-between">
               <i class="fa fa-twitter" aria-hidden="true"></i>
               <h6 class="link-social">
-                Follow <br />
-                on tiwtter
+                Follow
+                <p>on Tiwtter</p>
               </h6>
             </li>
-            <li class="social-item">
+            <li class="social-item flex align-center justify-between">
               <i class="fa fa-rss" aria-hidden="true"></i>
               <h6 class="link-social">
-                Subscribe <br />
-                to RSS Feed
+                Subscribe
+                <p>to RSS Feed</p>
               </h6>
             </li>
           </ul>
@@ -544,6 +563,19 @@
             <li class="list-item"><span>Monday-Friday</span>: 9am to 5pm</li>
             <li class="list-item"><span>Saturday</span>: 10am to 2pm</li>
             <li class="list-item"><span>Sunday</span>: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container flex justify-between align-center flex-wrap">
+          <a class="footer-bottom-left">- Enfold Theme by Kriesi</a>
+          <ul class="footer-bottom-right-list">
+            <li class="list-item"><a href="">Home</a></li>
+            <li class="list-item"><a href="">Help</a></li>
+            <li class="list-item"><a href="">Blogs</a></li>
+            <li class="list-item"><a href="">Features</a></li>
+            <li class="list-item"><a href="">Pages</a></li>
+            <li class="list-item"><a href="">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
