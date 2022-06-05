@@ -30,3 +30,23 @@
     transform: translateX(0);
   }
 }
+span {
+  position: relative;
+  hr {
+    width: 40%;
+    text-align: center;
+    margin: 2.5rem auto;
+    background-color: #fcfcfc;
+  }
+  .hr-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fcfcfc;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border: 2px solid #e1e1e1;
+    border-radius: 50%;
+  }
+}

@@ -55,38 +55,38 @@
 
         .logo-slide {
           top: 25%;
-          left: 15%;
-          width: 20%;
+          left: 8%;
+          width: 25%;
           height: 20%;
           animation: loop-slide 3s;
           font-size: 13px;
         }
         .logo-slide-desc {
           top: 50%;
-          left: 15%;
-          width: 18%;
+          left: 8%;
+          width: 25%;
           height: 10%;
           animation: loop-slide 3s;
           font-size: 13px;
         }
         .mac {
           top: 10%;
-          right: 20%;
-          width: 32%;
+          right: 18%;
+          width: 38%;
           height: 100%;
           animation: loop 3s;
         }
         .iphone {
           top: 50%;
-          left: 35%;
-          width: 20%;
+          left: 30%;
+          width: 22%;
           height: 50%;
           animation: loop-iphone 2s;
         }
         .mac-pro {
           top: 50%;
           right: 8%;
-          width: 25%;
+          width: 28%;
           height: 50%;
           animation: loop-mac 2s;
         }
@@ -272,6 +272,26 @@
     .container {
       padding: convertPxToRem(70px) convertPxToRem(50px);
     }
+    span {
+      position: relative;
+      hr {
+        width: 40%;
+        text-align: center;
+        margin: 2.5rem auto;
+        background-color: #fcfcfc;
+      }
+      .hr-style {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fcfcfc;
+        transform: translate(-50%, -50%);
+        width: 9px;
+        height: 9px;
+        border: 2px solid #e1e1e1;
+        border-radius: 50%;
+      }
+    }
     .showcasing-title {
       color: #444444;
       font-size: convertPxToRem(28px);
@@ -382,8 +402,25 @@
       min-width: 45%;
       text-align: right;
       position: relative;
-      hr {
-        margin: convertPxToRem(35px) 0;
+      span {
+        position: relative;
+        hr {
+          width: 40%;
+          position: relative;
+          background-color: #fcfcfc;
+          left: 30%;
+        }
+        .hr-style {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #fcfcfc;
+          transform: translate(-50%, -50%);
+          width: 9px;
+          height: 9px;
+          border: 2px solid #e1e1e1;
+          border-radius: 50%;
+        }
       }
       .btn-checkout {
         margin-bottom: 2rem;
@@ -459,10 +496,25 @@
       padding: convertPxToRem(70px) convertPxToRem(50px);
       gap: convertPxToRem(50px);
     }
-    hr {
-      width: 35%;
-      text-align: justify;
-      margin: 2rem 0;
+    span {
+      position: relative;
+      hr {
+        width: 35%;
+        text-align: justify;
+        margin: 2rem 0;
+        background-color: #fcfcfc;
+      }
+      .hr-style {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        background-color: #fcfcfc;
+        transform: translate(-50%, -50%);
+        width: 9px;
+        height: 9px;
+        border: 2px solid #e1e1e1;
+        border-radius: 50%;
+      }
     }
     img {
       min-width: 45%;
@@ -493,13 +545,7 @@
     .container {
       padding: convertPxToRem(70px) convertPxToRem(50px);
     }
-    hr {
-      width: 40%;
-      text-align: center;
-      margin: 2.5rem auto;
-      position: relative;
-      background-color: #fcfcfc;
-    }
+
     .about-us-title {
       line-height: convertPxToRem(50px);
       letter-spacing: convertPxToRem(0.5px);
@@ -663,6 +709,18 @@
       z-index: 2;
     }
   }
+  .page-footer {
+    .footer-left,
+    .footer-middle-one,
+    .footer-middle-two,
+    .footer-right {
+      min-width: 100%;
+      padding: 0;
+    }
+    .container {
+      gap: 0;
+    }
+  }
 }
 @include respond-below(wide) {
   .container {
@@ -679,8 +737,21 @@
       line-height: 2.25rem;
       font-size: 1.3rem;
     }
-    .section-about .about-right .about-item {
-      padding-bottom: 0.3rem;
+    .section-about {
+      .container {
+        padding: 70px 50px;
+      }
+      .about-right .about-item {
+        padding-bottom: 0.3rem;
+      }
+    }
+    .section-about-us {
+      .about-us-content {
+        flex-direction: column;
+        .about-us-item {
+          width: 100% !important;
+        }
+      }
     }
     .section-slider .wrapper .slider-content {
       .logo-slide {
@@ -702,150 +773,237 @@
         margin: 2rem 0;
       }
     }
-  }
-  @include respond-below(medium) {
-    .container {
-      padding: 1.125rem !important;
-    }
-    .page-main .slider-content-list {
-      .container {
-        flex-direction: column;
-      }
-      .list-item {
-        min-width: 100%;
-      }
-    }
-    .showcasing-card-list {
-      flex-wrap: wrap;
-    }
-    .section-feature {
-      .container {
-        flex-wrap: wrap;
-        .feature-img {
-          width: 100%;
-          img {
-            width: 100%;
-          }
-        }
-        .feature-content {
-          width: 100%;
-        }
-      }
-    }
-    .section-about {
-      .container {
-        flex-wrap: wrap;
-      }
-    }
-    .section-mobile {
-      .container {
-        flex-wrap: wrap;
-      }
-    }
-    .page-main {
-      .section-about-us .about-us-content .about-us-item {
-        width: 100%;
-        margin: 20px;
-      }
-      .section-contact-us {
-        .contact-us-title-desc {
-          padding-bottom: 2rem;
-        }
-        .contact-us-content .contact-us-box {
-          margin: 2rem 0;
-        }
-      }
-      .contact-us-content {
-        flex-wrap: wrap;
-      }
-      .section-about .about-right .about-item {
-        padding-bottom: 1rem;
-      }
-      .section-slider .wrapper .slider-content {
+    .section-slider .wrapper {
+      min-height: 308px;
+      .slider-content {
         .logo-slide {
           top: 20%;
           width: 30%;
-          left: 5%;
+          left: 8%;
           z-index: 2;
         }
         .logo-slide-desc {
           top: 45%;
-          left: 5%;
+          left: 8%;
           width: 30%;
-          z-index: 2;
-        }
-      }
-      .section-brand {
-        .brand-list {
-          flex-wrap: wrap;
-          .brand-item {
-            &:first-child {
-              min-width: 100%;
-            }
-            min-width: 50%;
-          }
-        }
-      }
-    }
-  }
-  @include respond-below(small) {
-    .container {
-      padding: 1rem !important;
-    }
-    .page-main {
-      .section-showcasing .showcasing-title {
-        line-height: 2.25rem;
-        font-size: 1.5rem;
-        padding-bottom: 0.5rem;
-      }
-      .slider-content-list {
-        padding: 2rem 0;
-      }
-      .slider-content-list .list-item .item-title {
-        font-size: 1rem;
-      }
-      .section-about .about-right .about-item {
-        padding: 0;
-      }
-      .section-feature .feature-content .feature-content-title {
-        font-size: 1.5rem;
-      }
-      .section-slider .wrapper .slider-content {
-        .logo-slide {
-          top: 20%;
-          width: 80%;
-          left: 10%;
-          z-index: 2;
-        }
-        .logo-slide-desc {
-          top: 45%;
-          left: 10%;
-          width: 80%;
           z-index: 2;
         }
         .mac {
           top: 20%;
-          right: 0;
-          width: 100%;
-          height: 80%;
+          right: 8%;
+          width: 35%;
+          height: 70%;
         }
         .iphone {
           top: 60%;
-          left: 0;
-          width: 50%;
-          height: 30%;
+          left: 55%;
+          width: 15%;
+          height: 35%;
         }
         .mac-pro {
           top: 60%;
           right: 0;
-          width: 50%;
+          width: 25%;
           height: 30%;
         }
         .iphone-hand {
           left: 0;
         }
       }
-      .section-about-us .about-us-content .about-us-item {
+    }
+  }
+  .page-footer {
+    .footer-left,
+    .footer-middle-one,
+    .footer-middle-two,
+    .footer-right {
+      min-width: 100%;
+      padding: 0;
+    }
+    .container {
+      gap: 0;
+    }
+  }
+}
+@include respond-below(medium) {
+  .container {
+    padding: 1.125rem !important;
+  }
+  .page-main .slider-content-list {
+    .container {
+      flex-direction: column;
+    }
+    .list-item {
+      min-width: 100%;
+    }
+  }
+  .showcasing-card-list {
+    flex-wrap: wrap;
+  }
+  .section-feature {
+    .container {
+      flex-wrap: wrap;
+      .feature-img {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .feature-content {
+        width: 100%;
+      }
+    }
+  }
+  .section-about {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  .section-mobile {
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+  .page-main {
+    .section-about-us .about-us-content .about-us-item {
+      width: 100%;
+      margin: 20px;
+    }
+    .section-feature .feature-content {
+      padding-top: 2rem;
+      margin-left: 0;
+    }
+    .section-about-us .about-us-content {
+      padding: 0;
+      gap: 1rem;
+      .about-us-item {
+        margin: 0;
+      }
+    }
+    .section-contact-us {
+      .contact-us-title-desc {
+        padding-bottom: 2rem;
+      }
+      .contact-us-content .contact-us-box {
+        margin: 2rem 0;
+      }
+    }
+    .contact-us-content {
+      flex-wrap: wrap;
+    }
+    .section-about .about-right .about-item {
+      padding-bottom: 1rem;
+    }
+    .section-brand {
+      .brand-list {
+        flex-wrap: wrap;
+        .brand-item {
+          &:first-child {
+            min-width: 100%;
+          }
+          min-width: 50%;
+        }
+      }
+    }
+    .section-slider .wrapper .slider-content {
+      .iphone {
+        top: 50%;
+        left: 45%;
+        width: 20%;
+        height: 35%;
+      }
+    }
+  }
+  .page-footer {
+    .footer-left,
+    .footer-middle-one,
+    .footer-middle-two,
+    .footer-right {
+      min-width: 100%;
+      padding: 0;
+    }
+    .container {
+      gap: 0;
+    }
+  }
+}
+@include respond-below(small) {
+  .container {
+    padding: 0;
+  }
+  .page-main {
+    .section-showcasing .showcasing-title {
+      line-height: 2.25rem;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .section-contact-us .contact-us-title {
+      line-height: 45px;
+    }
+    .slider-content-list {
+      padding: 2rem 0;
+    }
+    .slider-content-list .list-item .item-title {
+      font-size: 1rem;
+    }
+    .section-about .about-right .about-item {
+      padding: 0;
+    }
+    .section-feature .feature-content .feature-content-title {
+      font-size: 1.75rem;
+      padding-top: 2rem;
+    }
+    .section-feature .feature-content {
+      margin-left: 0;
+    }
+    .section-contact-us .contact-us-content {
+      flex-wrap: wrap;
+      .contact-us-box {
+        margin: 2rem 0;
+      }
+    }
+    .section-slider .wrapper {
+      min-height: 156px;
+      .slider-content {
+        .logo-slide {
+          top: 20%;
+          width: 30%;
+          left: 8%;
+          z-index: 2;
+        }
+        .logo-slide-desc {
+          top: 45%;
+          left: 8%;
+          width: 30%;
+          z-index: 2;
+        }
+        .mac {
+          top: 20%;
+          right: 8%;
+          width: 40%;
+          height: 80%;
+        }
+        .iphone {
+          top: 60%;
+          left: 45%;
+          width: 15%;
+          height: 35%;
+        }
+        .mac-pro {
+          top: 60%;
+          right: 0;
+          width: 20%;
+          height: 30%;
+        }
+        .iphone-hand {
+          left: 0;
+        }
+      }
+    }
+    .section-about-us .about-us-content {
+      padding: 0;
+      gap: 1rem;
+      .about-us-item {
         width: 100%;
         margin: 0;
         flex-wrap: wrap;
@@ -854,22 +1012,45 @@
           height: 10rem;
         }
       }
-      .section-brand {
-        .brand-list {
-          flex-wrap: wrap;
-          .brand-item {
-            min-width: 100%;
-          }
+    }
+    .section-about .about-right .about-item {
+      line-height: 2.5rem;
+      .icon-item {
+        margin: 0 1rem;
+        background-color: #d0d0d0;
+        height: 2.6875rem;
+        width: 2.6875rem;
+        font-size: 1rem;
+        &::after {
+          min-height: 98px;
+        }
+      }
+      .item-title {
+        font-size: 0.9rem;
+      }
+    }
+    .section-brand {
+      .brand-list {
+        flex-wrap: wrap;
+        .brand-item {
+          min-width: 100%;
         }
       }
     }
-    .about-us-title {
-      font-size: 1.3rem;
+  }
+  .about-us-title {
+    font-size: 1.3rem;
+  }
+  .page-footer {
+    .footer-left,
+    .footer-middle-one,
+    .footer-middle-two,
+    .footer-right {
+      min-width: 100%;
+      padding: 0;
     }
-    .mac,
-    .iphone,
-    .mac-pro {
-      opacity: 0.5;
+    .container {
+      gap: 0;
     }
   }
 }

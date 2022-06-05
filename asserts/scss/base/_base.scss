@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: 13px/1.65em myFont;
+  font-family: myFont;
   font-weight: map-get($font-weight, normal);
   font-size: $font-size-base;
   letter-spacing: -0.025em;
