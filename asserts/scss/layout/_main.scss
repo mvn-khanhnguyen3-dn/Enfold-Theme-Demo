@@ -30,6 +30,17 @@
     transform: translateX(0);
   }
 }
+strong {
+  color: #c3512f;
+}
+p {
+  color: #666666;
+  letter-spacing: 1px;
+}
+p,
+h6 {
+  font-size: convertPxToRem(13px) !important;
+}
 span {
   position: relative;
   hr {
