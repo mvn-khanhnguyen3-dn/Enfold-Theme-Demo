@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: #222222;
-  color: #dddddd;
+  background-color: map-get($colors, bg-black);
+  color: map-get($colors, txt-gray-dark);
   .container {
     justify-content: space-between;
     padding: 0 50px;
@@ -33,22 +33,21 @@
         img {
           max-width: 100%;
           height: 100%;
-          // margin: 0 10px;
           border: 4px solid #444444;
-          color: #dddddd;
+          color: map-get($colors, txt-gray-dark);
         }
       }
     }
   }
   .footer-title {
     padding: 1.5rem 0;
-    color: #919191;
+    color: map-get($colors, txt-gray-title);
     font-size: 16px;
   }
   .footer-left {
     .footer-left-desc {
       padding-bottom: 30px;
-      color: #ffffff;
+      color: map-get($colors, white);
     }
   }
   .footer-left-socials {
@@ -57,15 +56,15 @@
       .link-social {
         font-size: 13px;
         letter-spacing: 1px;
-        color: #919191;
+        color: map-get($colors, txt-gray-title);
         width: 5rem;
         p {
           font-size: 10px;
-          color: #fff;
+          color: map-get($colors, white);
         }
       }
       i {
-        color: #fff;
+        color: map-get($colors, white);
         background-color: #46d4fe;
         border-color: #46d4fe;
         border-radius: 5px;
@@ -98,20 +97,20 @@
   }
   .footer-middle-category-list {
     .list-item {
-      color: #fff;
+       color: map-get($colors, white );
       font-weight: 500;
     }
   }
   .footer-right {
     p {
-      color: #dddddd;
+      color: map-get($colors, txt-gray-dark);
     }
   }
   .footer-right-list {
     .list-item {
       span {
         font-weight: 500;
-        color: #fff;
+         color: map-get($colors,white );
       }
     }
   }
@@ -123,7 +122,7 @@
     a {
       font-size: convertPxToRem(11px);
       font-weight: 600;
-      color: #fff;
+       color: map-get($colors, white );
     }
     .footer-bottom-right-list {
       .list-item {

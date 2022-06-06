@@ -1,6 +1,6 @@
 .page-header {
   background: map-get($colors, white);
-  border-color: #e1e1e1;
+  border-color: map-get($colors, border-gray);
   text-align: center;
   min-height: convertPxToRem(90px);
   .container {
@@ -22,13 +22,13 @@
       &:first-child,
       &:nth-child(6) {
         text-align: center;
-        border-bottom: convertPxToRem(3px) solid #c3512f;
+        border-bottom: convertPxToRem(3px) solid map-get($colors, primary );
       }
       a {
         font-size: convertPxToRem(15px);
         font-weight: 600;
         letter-spacing: convertPxToRem(0.5px);
-        color: #646464;
+        color: map-get($colors, txt-gray );
       }
     }
   }
