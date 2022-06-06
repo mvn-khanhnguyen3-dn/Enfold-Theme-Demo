@@ -1121,7 +1121,7 @@ table th, table td {
 
 .page-header .menu-list .menu-item:first-child, .page-header .menu-list .menu-item:nth-child(6) {
   text-align: center;
-  border-bottom: 0.125rem solid #c3512f;
+  border-bottom: 0.1875rem solid #c3512f;
 }
 
 .page-header .menu-list .menu-item a {
@@ -1312,6 +1312,7 @@ span .hr-style {
 
 .page-footer .footer-left .footer-left-desc {
   padding-bottom: 30px;
+  color: #ffffff;
 }
 
 .page-footer .footer-left-socials {
@@ -1366,6 +1367,10 @@ span .hr-style {
 .page-footer .footer-middle-category-list .list-item {
   color: #fff;
   font-weight: 500;
+}
+
+.page-footer .footer-right p {
+  color: #dddddd;
 }
 
 .page-footer .footer-right-list .list-item span {
@@ -1457,7 +1462,7 @@ span .hr-style {
 .page-main .section-slider .wrapper .slider-content .logo-slide {
   top: 25%;
   left: 8%;
-  width: 25%;
+  width: 22%;
   height: 20%;
   -webkit-animation: loop-slide 3s;
           animation: loop-slide 3s;
@@ -1467,7 +1472,7 @@ span .hr-style {
 .page-main .section-slider .wrapper .slider-content .logo-slide-desc {
   top: 50%;
   left: 8%;
-  width: 25%;
+  width: 22%;
   height: 10%;
   -webkit-animation: loop-slide 3s;
           animation: loop-slide 3s;
@@ -2136,11 +2141,11 @@ span .hr-style {
     line-height: 1.1em !important;
   }
   .page-main .container {
-    padding: 4.375rem 1rem;
+    padding: 4.375rem 2rem;
   }
   .page-main .slider-content-list .container {
     gap: 1.25rem;
-    padding: 3.125rem 1rem;
+    padding: 3.125rem 2rem;
   }
   .page-main .section-slider .wrapper .slider-content .mac {
     top: 20%;
@@ -2327,6 +2332,9 @@ span .hr-style {
   .page-main .section-about-us .about-us-content .about-us-item {
     margin: 0;
   }
+  .page-main .section-about-us .about-us-content .about-us-item .item-desc p {
+    letter-spacing: 0.5px;
+  }
   .page-main .section-contact-us .contact-us-title-desc {
     padding-bottom: 2rem;
   }
@@ -2433,6 +2441,9 @@ span .hr-style {
     margin: 0;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .page-main .section-about-us .about-us-content .about-us-item .item-desc p {
+    letter-spacing: 0.5px;
   }
   .page-main .section-about-us .about-us-content .about-us-item img {
     width: 7.5rem;

@@ -43,7 +43,7 @@
         .logo-slide {
           top: 25%;
           left: 8%;
-          width: 25%;
+          width: 22%;
           height: 20%;
           animation: loop-slide 3s;
           font-size: 13px;
@@ -51,7 +51,7 @@
         .logo-slide-desc {
           top: 50%;
           left: 8%;
-          width: 25%;
+          width: 22%;
           height: 10%;
           animation: loop-slide 3s;
           font-size: 13px;
@@ -608,12 +608,12 @@
   }
   .page-main {
     .container {
-      padding: convertPxToRem(70px) 1rem;
+      padding: convertPxToRem(70px) 2rem;
     }
     .slider-content-list {
       .container {
         gap: convertPxToRem(20px);
-        padding: convertPxToRem(50px) 1rem;
+        padding: convertPxToRem(50px) 2rem;
       }
     }
     .section-slider .wrapper .slider-content {
@@ -815,6 +815,11 @@
       gap: 1rem;
       .about-us-item {
         margin: 0;
+        .item-desc {
+          p {
+            letter-spacing: 0.5px;
+          }
+        }
       }
     }
     .section-contact-us {
@@ -932,6 +937,11 @@
         width: 100%;
         margin: 0;
         flex-wrap: wrap;
+        .item-desc {
+          p {
+            letter-spacing: 0.5px;
+          }
+        }
         img {
           width: convertPxToRem(120px);
           height: convertPxToRem(120px);
