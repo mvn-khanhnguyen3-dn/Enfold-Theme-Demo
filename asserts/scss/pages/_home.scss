@@ -78,8 +78,8 @@
           animation: loop-mac 2s;
         }
         .iphone-hand {
-          bottom: 0;
-          left: 5%;
+          bottom: -15%;
+          left: 0;
           animation: loop 2s;
         }
         .slide-content-top {
@@ -96,11 +96,11 @@
         }
         .slide-title {
           top: 25%;
-          left: 55%;
+          right: 25%;
           text-shadow: none;
           font-weight: normal;
           opacity: 0.65;
-          width: 20rem;
+          width: 25%;
           text-align: center;
           padding: 1.5rem 0.5rem;
           font-size: 1.5rem;
@@ -108,13 +108,13 @@
           background: rgb(0, 0, 0);
         }
         .slide-desc {
-          top: 39%;
-          left: 55%;
+          top: 40%;
+          right: 25%;
           text-shadow: none;
           font-weight: normal;
           opacity: 0.65;
           text-align: center;
-          width: 20rem;
+          width: 25%;
           padding: 1rem 0.5rem;
           font-size: 1rem;
           color: rgb(255, 255, 255);
@@ -606,6 +606,9 @@
   h2 {
     line-height: 1.1em !important;
   }
+  .btn-primary {
+    padding: 11px 20px 11px;
+  }
   .page-main {
     .container {
       padding: convertPxToRem(70px) 2rem;
@@ -759,7 +762,18 @@
           height: 30%;
         }
         .iphone-hand {
-          left: 0;
+          left: -20%;
+        }
+        .slide-title {
+          width: 40%;
+          left: 50%;
+          padding: 0.5rem 0rem;
+          font-size: 0.5rem;
+        }
+        .slide-desc {
+          top: 32%;
+          width: 40%;
+          left: 50%;
         }
       }
     }
@@ -925,7 +939,17 @@
             height: 30%;
           }
           .iphone-hand {
-            left: 0;
+            left: -20%;
+          }
+          .slide-title {
+            width: 40%;
+            left: 50%;
+            padding: 0.5rem 0rem;
+            font-size: 0.5rem;
+          }
+          .slide-desc {
+            width: 40%;
+            left: 50%;
           }
         }
       }
@@ -953,17 +977,17 @@
       padding: 0;
       margin: 0;
       .icon-item {
-        margin: 0 1rem;
+        margin: 0 0.7rem;
         background-color: #d0d0d0;
-        height: 2.6875rem;
-        width: 2.6875rem;
+        height: 3rem;
+        width: 3rem;
         font-size: 1rem;
         &::after {
-          min-height: 98px;
+          min-height: 105px;
         }
       }
       .item-title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
     .section-brand {

@@ -31,6 +31,8 @@
         display: flex;
         gap: 10px;
         img {
+          max-width: 100%;
+          height: 100%;
           // margin: 0 10px;
           border: 4px solid #444444;
           color: #dddddd;

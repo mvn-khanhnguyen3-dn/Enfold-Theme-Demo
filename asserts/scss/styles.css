@@ -1300,6 +1300,8 @@ span .hr-style {
 }
 
 .page-footer .footer-middle-one .footer-middle-content .content-item img {
+  max-width: 100%;
+  height: 100%;
   border: 4px solid #444444;
   color: #dddddd;
 }
@@ -1507,8 +1509,8 @@ span .hr-style {
 }
 
 .page-main .section-slider .wrapper .slider-content .iphone-hand {
-  bottom: 0;
-  left: 5%;
+  bottom: -15%;
+  left: 0;
   -webkit-animation: loop 2s;
           animation: loop 2s;
 }
@@ -1529,11 +1531,11 @@ span .hr-style {
 
 .page-main .section-slider .wrapper .slider-content .slide-title {
   top: 25%;
-  left: 55%;
+  right: 25%;
   text-shadow: none;
   font-weight: normal;
   opacity: 0.65;
-  width: 20rem;
+  width: 25%;
   text-align: center;
   padding: 1.5rem 0.5rem;
   font-size: 1.5rem;
@@ -1542,13 +1544,13 @@ span .hr-style {
 }
 
 .page-main .section-slider .wrapper .slider-content .slide-desc {
-  top: 39%;
-  left: 55%;
+  top: 40%;
+  right: 25%;
   text-shadow: none;
   font-weight: normal;
   opacity: 0.65;
   text-align: center;
-  width: 20rem;
+  width: 25%;
   padding: 1rem 0.5rem;
   font-size: 1rem;
   color: white;
@@ -2140,6 +2142,9 @@ span .hr-style {
   h2 {
     line-height: 1.1em !important;
   }
+  .btn-primary {
+    padding: 11px 20px 11px;
+  }
   .page-main .container {
     padding: 4.375rem 2rem;
   }
@@ -2278,7 +2283,18 @@ span .hr-style {
     height: 30%;
   }
   .page-main .section-slider .wrapper .slider-content .iphone-hand {
-    left: 0;
+    left: -20%;
+  }
+  .page-main .section-slider .wrapper .slider-content .slide-title {
+    width: 40%;
+    left: 50%;
+    padding: 0.5rem 0rem;
+    font-size: 0.5rem;
+  }
+  .page-main .section-slider .wrapper .slider-content .slide-desc {
+    top: 32%;
+    width: 40%;
+    left: 50%;
   }
 }
 
@@ -2430,7 +2446,17 @@ span .hr-style {
     height: 30%;
   }
   .page-main .section-slider .wrapper .slider-content .iphone-hand {
-    left: 0;
+    left: -20%;
+  }
+  .page-main .section-slider .wrapper .slider-content .slide-title {
+    width: 40%;
+    left: 50%;
+    padding: 0.5rem 0rem;
+    font-size: 0.5rem;
+  }
+  .page-main .section-slider .wrapper .slider-content .slide-desc {
+    width: 40%;
+    left: 50%;
   }
   .page-main .section-about-us .about-us-content {
     padding: 0;
@@ -2455,17 +2481,17 @@ span .hr-style {
     margin: 0;
   }
   .page-main .section-about .about-right .about-item .icon-item {
-    margin: 0 1rem;
+    margin: 0 0.7rem;
     background-color: #d0d0d0;
-    height: 2.6875rem;
-    width: 2.6875rem;
+    height: 3rem;
+    width: 3rem;
     font-size: 1rem;
   }
   .page-main .section-about .about-right .about-item .icon-item::after {
-    min-height: 98px;
+    min-height: 105px;
   }
   .page-main .section-about .about-right .about-item .item-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .page-main .section-brand .brand-list {
     -ms-flex-wrap: wrap;
