@@ -843,6 +843,7 @@ table th, table td {
 }
 
 .container {
+  padding: 70px 50px;
   margin: 0 auto;
   max-width: 1130px;
 }
@@ -1237,10 +1238,10 @@ span {
 }
 
 span hr {
-  width: 40%;
+  width: 30%;
   text-align: center;
   margin: 2.5rem auto;
-  background-color: #fcfcfc;
+  border-top: 1px solid #e1e1e1;
 }
 
 span .hr-style {
@@ -1254,6 +1255,7 @@ span .hr-style {
   height: 9px;
   border: 2px solid #e1e1e1;
   border-radius: 50%;
+  margin-top: 1px;
 }
 
 .page-footer {
@@ -1691,10 +1693,6 @@ span .hr-style {
   font-weight: 600;
 }
 
-.page-main .section-showcasing .container {
-  padding: 4.375rem 3.125rem;
-}
-
 .page-main .section-showcasing span {
   position: relative;
 }
@@ -1753,7 +1751,6 @@ span .hr-style {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 4.375rem 3.125rem;
 }
 
 .page-main .section-feature .feature-img {
@@ -1834,7 +1831,6 @@ span .hr-style {
 }
 
 .page-main .section-about .container {
-  padding: 4.375rem 3.125rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1953,7 +1949,6 @@ span .hr-style {
 }
 
 .page-main .section-mobile .container {
-  padding: 4.375rem 3.125rem;
   gap: 3.125rem;
 }
 
@@ -2010,10 +2005,6 @@ span .hr-style {
   background-color: #fdfdfd;
 }
 
-.page-main .section-about-us .container {
-  padding: 4.375rem 3.125rem;
-}
-
 .page-main .section-about-us .about-us-title {
   line-height: 3.125rem;
   letter-spacing: 0.03125rem;
@@ -2063,8 +2054,8 @@ span .hr-style {
   line-height: 3.125rem;
 }
 
-.page-main .section-contact-us .container {
-  padding: 4.375rem 3.125rem;
+.page-main .section-contact-us hr {
+  width: 30%;
 }
 
 .page-main .section-contact-us .contact-us-title,
@@ -2091,7 +2082,7 @@ span .hr-style {
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box:first-child {
-  margin: 0;
+  margin-left: 0;
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box .contact-us-box-title {
@@ -2123,6 +2114,10 @@ span .hr-style {
   color: #fff;
 }
 
+.page-main .section-brand .container {
+  padding: 0;
+}
+
 .page-main .section-brand .brand-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2137,8 +2132,15 @@ span .hr-style {
 }
 
 @media (max-width: 1023px) {
-  .page-main .slider-content-list {
-    gap: 1.875rem;
+  h2 {
+    line-height: 1.1em !important;
+  }
+  .page-main .container {
+    padding: 4.375rem 1rem;
+  }
+  .page-main .slider-content-list .container {
+    gap: 1.25rem;
+    padding: 3.125rem 1rem;
   }
   .page-main .section-slider .wrapper .slider-content .mac {
     top: 20%;
@@ -2192,18 +2194,12 @@ span .hr-style {
     min-width: 100%;
     padding: 0;
   }
+  .page-footer .container {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 959px) {
-  .container {
-    padding: 4.375rem 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header .container {
-    padding: 0 1rem !important;
-  }
   .page-header .menu-list {
     display: none;
   }
@@ -2241,6 +2237,7 @@ span .hr-style {
   }
   .page-main .section-contact-us .contact-us-content .contact-us-box {
     margin: 2rem 0;
+    width: 100%;
   }
   .page-main .section-slider .wrapper {
     min-height: 308px;
@@ -2281,15 +2278,6 @@ span .hr-style {
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 4.375rem 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header .container {
-    padding: 0 1rem !important;
-  }
   .page-main .slider-content-list .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2368,15 +2356,6 @@ span .hr-style {
 }
 
 @media (max-width: 479px) {
-  .container {
-    padding: 4.375rem 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header .container {
-    padding: 0 1rem !important;
-  }
   .page-main .section-showcasing .showcasing-title {
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
@@ -2452,10 +2431,12 @@ span .hr-style {
   .page-main .section-about-us .about-us-content .about-us-item {
     width: 100%;
     margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .page-main .section-about-us .about-us-content .about-us-item img {
-    width: 5rem;
-    height: 5rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
   .page-main .section-about .about-right .about-item {
     line-height: 2.5rem;

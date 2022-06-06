@@ -234,9 +234,6 @@
     text-align: center;
     min-width: 100%;
     font-weight: 600;
-    .container {
-      padding: convertPxToRem(70px) convertPxToRem(50px);
-    }
     span {
       position: relative;
       hr {
@@ -286,7 +283,6 @@
   .section-feature {
     .container {
       justify-content: space-between;
-      padding: convertPxToRem(70px) convertPxToRem(50px);
     }
     .feature-img {
       width: calc(100% / 2);
@@ -353,7 +349,6 @@
   .section-about {
     background-color: #fdfdfd;
     .container {
-      padding: convertPxToRem(70px) convertPxToRem(50px);
       justify-content: space-between;
       li {
         font-size: convertPxToRem(16px);
@@ -454,7 +449,6 @@
   }
   .section-mobile {
     .container {
-      padding: convertPxToRem(70px) convertPxToRem(50px);
       gap: convertPxToRem(50px);
     }
     span {
@@ -503,9 +497,6 @@
   .section-about-us {
     text-align: center;
     background-color: #fdfdfd;
-    .container {
-      padding: convertPxToRem(70px) convertPxToRem(50px);
-    }
     .about-us-title {
       line-height: convertPxToRem(50px);
       letter-spacing: convertPxToRem(0.5px);
@@ -545,8 +536,8 @@
     background-position: top center;
     background-size: cover;
     line-height: convertPxToRem(50px);
-    .container {
-      padding: convertPxToRem(70px) convertPxToRem(50px);
+    hr {
+      width: 30%;
     }
     .contact-us-title,
     .contact-us-title-desc {
@@ -568,7 +559,7 @@
         min-width: 25%;
         margin-left: 2rem;
         &:first-child {
-          margin: 0;
+          margin-left: 0;
         }
         .contact-us-box-title {
           padding: 1rem 0 0 0;
@@ -599,6 +590,9 @@
     }
   }
   .section-brand {
+    .container {
+      padding: 0;
+    }
     .brand-list {
       justify-content: center;
       align-items: center;
@@ -609,9 +603,18 @@
   }
 }
 @include respond-below(large) {
+  h2 {
+    line-height: 1.1em !important;
+  }
   .page-main {
+    .container {
+      padding: convertPxToRem(70px) 1rem;
+    }
     .slider-content-list {
-      gap: convertPxToRem(30px);
+      .container {
+        gap: convertPxToRem(20px);
+        padding: convertPxToRem(50px) 1rem;
+      }
     }
     .section-slider .wrapper .slider-content {
       .mac {
@@ -672,20 +675,12 @@
       min-width: 100%;
       padding: 0;
     }
+    .container {
+      padding: 0 1rem;
+    }
   }
 }
 @include respond-below(wide) {
-  .container {
-    padding: convertPxToRem(70px) 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header {
-    .container {
-      padding: 0 1rem !important;
-    }
-  }
   .page-header {
     .menu-list {
       display: none;
@@ -727,6 +722,7 @@
       flex-wrap: wrap;
       .contact-us-box {
         margin: 2rem 0;
+        width: 100%;
       }
     }
     .section-slider .wrapper {
@@ -770,17 +766,6 @@
   }
 }
 @include respond-below(medium) {
-  .container {
-    padding: convertPxToRem(70px) 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header {
-    .container {
-      padding: 0 1rem !important;
-    }
-  }
   .page-main {
     .slider-content-list {
       .container {
@@ -868,17 +853,6 @@
   }
 }
 @include respond-below(small) {
-  .container {
-    padding: convertPxToRem(70px) 1rem !important;
-  }
-  h2 {
-    line-height: 1.1em !important;
-  }
-  .page-header {
-    .container {
-      padding: 0 1rem !important;
-    }
-  }
   .page-main {
     .section-showcasing .showcasing-title {
       font-size: 1.5rem;
@@ -957,10 +931,10 @@
       .about-us-item {
         width: 100%;
         margin: 0;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
         img {
-          width: convertPxToRem(80px);
-          height: convertPxToRem(80px);
+          width: convertPxToRem(120px);
+          height: convertPxToRem(120px);
         }
       }
     }

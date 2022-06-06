@@ -44,10 +44,10 @@ h6 {
 span {
   position: relative;
   hr {
-    width: 40%;
+    width: 30%;
     text-align: center;
     margin: 2.5rem auto;
-    background-color: #fcfcfc;
+    border-top: 1px solid #e1e1e1;
   }
   .hr-style {
     position: absolute;
@@ -59,5 +59,6 @@ span {
     height: 9px;
     border: 2px solid #e1e1e1;
     border-radius: 50%;
+    margin-top: 1px;
   }
 }
