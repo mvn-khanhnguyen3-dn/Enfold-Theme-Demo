@@ -207,7 +207,6 @@
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     .container {
       gap: convertPxToRem(50px);
-      padding: convertPxToRem(50px);
     }
     .list-item {
       width: calc(100% / 3);
@@ -504,16 +503,17 @@
     }
     .about-us-content {
       text-align: left;
-      gap: convertPxToRem(50px);
       .about-us-item {
         display: flex;
-        width: calc(100% / 2 - 2rem);
-        gap: 1rem;
+        width: calc(100% / 2 - 0.23rem);
         line-height: convertPxToRem(30px);
         img {
-          width: convertPxToRem(100px);
-          height: convertPxToRem(100px);
-          border-radius: 50%;
+          float: left;
+          margin: 0 20px 0 0;
+          width: 80px;
+          height: 80px;
+          border-radius: 100px;
+          aspect-ratio: auto 180 / 180;
         }
         .item-desc {
           line-height: convertPxToRem(20px);
@@ -524,6 +524,7 @@
         }
         .item-position {
           color: #a0a0a0;
+          padding-bottom: 2rem;
         }
       }
     }
@@ -597,7 +598,7 @@
       justify-content: center;
       align-items: center;
       .brand-item {
-        max-width: 18%;
+        max-width: 20%;
       }
     }
   }

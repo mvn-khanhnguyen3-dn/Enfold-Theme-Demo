@@ -819,7 +819,7 @@ table th, table td {
 }
 
 .container {
-  padding: 70px 50px;
+  padding: 70px 0px;
   margin: 0 auto;
   max-width: 1130px;
 }
@@ -1243,7 +1243,7 @@ span .hr-style {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 50px;
+  padding: 0;
   gap: 4rem;
 }
 
@@ -1643,7 +1643,6 @@ span .hr-style {
 
 .page-main .slider-content-list .container {
   gap: 3.125rem;
-  padding: 3.125rem;
 }
 
 .page-main .slider-content-list .list-item {
@@ -1996,22 +1995,23 @@ span .hr-style {
 
 .page-main .section-about-us .about-us-content {
   text-align: left;
-  gap: 3.125rem;
 }
 
 .page-main .section-about-us .about-us-content .about-us-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% / 2 - 2rem);
-  gap: 1rem;
+  width: calc(100% / 2 - 0.23rem);
   line-height: 1.875rem;
 }
 
 .page-main .section-about-us .about-us-content .about-us-item img {
-  width: 6.25rem;
-  height: 6.25rem;
-  border-radius: 50%;
+  float: left;
+  margin: 0 20px 0 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  aspect-ratio: auto 180 / 180;
 }
 
 .page-main .section-about-us .about-us-content .about-us-item .item-desc {
@@ -2025,6 +2025,7 @@ span .hr-style {
 
 .page-main .section-about-us .about-us-content .about-us-item .item-position {
   color: #a0a0a0;
+  padding-bottom: 2rem;
 }
 
 .page-main .section-contact-us {
@@ -2111,7 +2112,7 @@ span .hr-style {
 }
 
 .page-main .section-brand .brand-list .brand-item {
-  max-width: 18%;
+  max-width: 20%;
 }
 
 @media (max-width: 1023px) {
