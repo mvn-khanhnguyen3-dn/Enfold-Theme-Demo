@@ -819,7 +819,7 @@ table th, table td {
 }
 
 .container {
-  padding: 70px 40px;
+  padding: 70px 45px;
   margin: 0 auto;
   max-width: 1130px;
 }
@@ -1206,7 +1206,7 @@ p {
 
 p,
 h6 {
-  font-size: 0.8125rem !important;
+  font-size: 13px !important;
 }
 
 span {
@@ -1300,7 +1300,7 @@ span .hr-style {
 }
 
 .page-footer .footer-left-socials .social-item .link-social {
-  font-size: 13px;
+  font-size: 13px !important;
   letter-spacing: 1px;
   color: #919191;
   width: 5rem;
