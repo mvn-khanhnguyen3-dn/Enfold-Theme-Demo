@@ -819,7 +819,7 @@ table th, table td {
 }
 
 .container {
-  padding: 70px 0px;
+  padding: 70px 40px;
   margin: 0 auto;
   max-width: 1130px;
 }
