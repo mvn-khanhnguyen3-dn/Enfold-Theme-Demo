@@ -1300,14 +1300,13 @@ span .hr-style {
 }
 
 .page-footer .footer-left-socials .social-item .link-social {
-  font-size: 13px !important;
   letter-spacing: 1px;
   color: #919191;
   width: 5rem;
 }
 
 .page-footer .footer-left-socials .social-item .link-social p {
-  font-size: 10px;
+  font-size: 10px !important;
   color: #fff;
 }
 

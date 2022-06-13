@@ -54,12 +54,11 @@
     display: flex;
     .social-item {
       .link-social {
-        font-size: 13px !important;
         letter-spacing: 1px;
         color: map-get($colors, txt-gray-title);
         width: 5rem;
         p {
-          font-size: 10px;
+          font-size: 10px !important;
           color: map-get($colors, white);
         }
       }
