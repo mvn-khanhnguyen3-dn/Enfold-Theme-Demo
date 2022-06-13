@@ -149,14 +149,6 @@ section {
           box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
-@font-face {
-  font-family: myFont;
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-  src: url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff2") format("woff2"), url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff") format("woff"), url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf") format("truetype"), url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello") format("svg"), url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot"), url("https://kriesi.at/themes/enfold/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?#iefix") format("embedded-opentype");
-}
-
 .mx-0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -615,7 +607,7 @@ section {
 }
 
 body {
-  font-family: myFont;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: -0.025em;
@@ -2066,7 +2058,7 @@ span .hr-style {
 .page-main .section-contact-us .contact-us-content .contact-us-box {
   background-color: #fff;
   padding: 0.625rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   position: relative;
   min-width: 30%;
   margin-left: 3rem;
