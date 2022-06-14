@@ -22,13 +22,16 @@
       &:first-child,
       &:nth-child(6) {
         text-align: center;
-        border-bottom: convertPxToRem(3px) solid map-get($colors, primary );
+        border-bottom: convertPxToRem(3px) solid map-get($colors, primary);
       }
       a {
         font-size: convertPxToRem(13px);
         font-weight: 600;
         letter-spacing: convertPxToRem(0.5px);
-        color: map-get($colors, txt-gray );
+        color: #6e6e6e;
+      }
+      .active {
+        color: #333333 !important;
       }
     }
   }

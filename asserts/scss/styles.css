@@ -1104,7 +1104,11 @@ table th, table td {
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.03125rem;
-  color: #646464;
+  color: #6e6e6e;
+}
+
+.page-header .menu-list .menu-item .active {
+  color: #333333 !important;
 }
 
 @-webkit-keyframes loop-slide {
