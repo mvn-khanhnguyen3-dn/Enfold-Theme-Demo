@@ -4,8 +4,8 @@
   padding: 0;
 }
 body {
-  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: map-get($font-weight, normal);
   font-size: $font-size-base;
   letter-spacing: -0.025em;
@@ -32,6 +32,7 @@ h4,
 h5,
 h6 {
   font-weight: map-get($font-weight, medium);
+  font-family: "open sans", Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: map-get($h-font-size, h1);

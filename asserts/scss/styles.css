@@ -607,7 +607,7 @@ section {
 }
 
 body {
-  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: -0.025em;
@@ -639,6 +639,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  font-family: "open sans", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -1201,6 +1202,7 @@ table th, table td {
 
 strong {
   color: #c3512f;
+  font-weight: 400;
 }
 
 p {
@@ -1262,6 +1264,7 @@ span .hr-style {
 
 .page-footer p {
   font-size: 13px;
+  color: #919191;
 }
 
 .page-footer h6 {
@@ -1293,12 +1296,13 @@ span .hr-style {
 .page-footer .footer-title {
   padding: 1.5rem 0;
   color: #919191;
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .page-footer .footer-left .footer-left-desc {
   padding-bottom: 30px;
-  color: #fff;
+  color: #dddddd;
 }
 
 .page-footer .footer-left-socials {
