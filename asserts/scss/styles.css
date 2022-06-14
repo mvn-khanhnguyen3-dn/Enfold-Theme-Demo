@@ -1202,6 +1202,9 @@ table th, table td {
 
 strong {
   color: #c3512f;
+}
+
+.section-contact-us strong {
   font-weight: 400;
 }
 
@@ -1654,6 +1657,7 @@ span .hr-style {
 
 .page-main .slider-content-list .container {
   gap: 3.125rem;
+  padding: 50px;
 }
 
 .page-main .slider-content-list .list-item {
