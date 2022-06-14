@@ -1253,7 +1253,7 @@ span .hr-style {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
+  padding: 0 50px;
   gap: 4rem;
 }
 
@@ -2088,8 +2088,8 @@ span .hr-style {
   padding: 0.625rem;
   border-radius: 0.3125rem;
   position: relative;
-  min-width: 30%;
-  margin-left: 3rem;
+  min-width: 25%;
+  margin-left: 4rem;
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box:first-child {
@@ -2099,7 +2099,7 @@ span .hr-style {
 .page-main .section-contact-us .contact-us-content .contact-us-box .contact-us-box-title {
   padding: 1rem 0 0 0;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 0.0625rem;
   color: #222222;
 }
@@ -2140,7 +2140,7 @@ span .hr-style {
 }
 
 .page-main .section-brand .brand-list .brand-item {
-  max-width: 20%;
+  max-width: 18%;
 }
 
 @media (max-width: 1023px) {
