@@ -607,7 +607,7 @@ section {
 }
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "HelveticaNeue", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   letter-spacing: -0.025em;
@@ -819,7 +819,7 @@ table th, table td {
 }
 
 .container {
-  padding: 70px 45px;
+  padding: 70px 50px;
   margin: 0 auto;
   max-width: 1130px;
 }
@@ -1101,7 +1101,7 @@ table th, table td {
 }
 
 .page-header .menu-list .menu-item a {
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.03125rem;
   color: #646464;
@@ -1207,6 +1207,10 @@ p {
 p,
 h6 {
   font-size: 13px !important;
+}
+
+h2 {
+  color: #444444;
 }
 
 span {
@@ -1786,6 +1790,7 @@ span .hr-style {
   line-height: 1.34062rem;
   margin: 11.05px 0px;
   color: #666666;
+  font-size: 13px;
 }
 
 .page-main .section-feature .feature-content .feature-content-desc:last-child,
@@ -1795,6 +1800,7 @@ span .hr-style {
 
 .page-main .section-feature .feature-content .feature-list {
   padding-left: 0.9375rem;
+  font-size: 13px;
 }
 
 .page-main .section-feature .feature-content .feature-list .feature-item {
@@ -1825,6 +1831,10 @@ span .hr-style {
   min-width: 45%;
   text-align: right;
   position: relative;
+}
+
+.page-main .section-about .about-left p {
+  color: #888888;
 }
 
 .page-main .section-about .about-left span {
@@ -1886,6 +1896,11 @@ span .hr-style {
 
 .page-main .section-about .about-right .about-item .item-title {
   font-size: 1.125rem;
+  color: #444444;
+}
+
+.page-main .section-about .about-right .about-item .item-desc {
+  color: #a0a0a0;
 }
 
 .page-main .section-about .about-right .about-item .icon-item {
@@ -1986,6 +2001,10 @@ span .hr-style {
   background-color: #fdfdfd;
 }
 
+.page-main .section-about-us p {
+  color: #888888;
+}
+
 .page-main .section-about-us .about-us-title {
   line-height: 3.125rem;
   letter-spacing: 0.03125rem;
@@ -2020,6 +2039,7 @@ span .hr-style {
 
 .page-main .section-about-us .about-us-content .about-us-item .item-name {
   padding-top: 1rem;
+  color: #444444;
 }
 
 .page-main .section-about-us .about-us-content .about-us-item .item-position {
@@ -2073,6 +2093,7 @@ span .hr-style {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
+  color: #222222;
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box .contact-us-box-desc {
@@ -2192,6 +2213,9 @@ span .hr-style {
   .page-main .section-showcasing .showcasing-title {
     line-height: 2.25rem;
     font-size: 1.3rem;
+  }
+  .page-main .section-showcasing .showcasing-card-list .card-item .item-desc {
+    padding: 0.8rem;
   }
   .page-main .section-about .about-right .about-item {
     padding-bottom: 0.3rem;
@@ -2359,6 +2383,10 @@ span .hr-style {
   .page-main .section-showcasing .showcasing-title {
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
+  }
+  .page-main .section-showcasing .showcasing-card-list .card-item .item-desc {
+    padding: 0.8rem;
+    letter-spacing: 0;
   }
   .page-main .slider-content-list {
     padding: 0;

@@ -328,12 +328,14 @@
         line-height: convertPxToRem(21.45px);
         margin: 11.05px 0px;
         color: #666666;
+        font-size: 13px;
         &:last-child {
           padding: 0;
         }
       }
       .feature-list {
         padding-left: convertPxToRem(15px);
+        font-size: 13px;
         .feature-item {
           list-style: outside;
           padding: 3px 0px;
@@ -357,6 +359,9 @@
       min-width: 45%;
       text-align: right;
       position: relative;
+      p {
+        color: #888888;
+      }
       span {
         position: relative;
         hr {
@@ -408,6 +413,10 @@
         }
         .item-title {
           font-size: convertPxToRem(18px);
+          color: #444444;
+        }
+        .item-desc {
+          color: #a0a0a0;
         }
         .icon-item {
           margin: 0 convertPxToRem(40px);
@@ -496,6 +505,9 @@
   .section-about-us {
     text-align: center;
     background-color: #fdfdfd;
+    p {
+      color: #888888;
+    }
     .about-us-title {
       line-height: convertPxToRem(50px);
       letter-spacing: convertPxToRem(0.5px);
@@ -521,6 +533,7 @@
         }
         .item-name {
           padding-top: 1rem;
+          color: #444444;
         }
         .item-position {
           color: #a0a0a0;
@@ -567,6 +580,7 @@
           font-size: convertPxToRem(16px);
           font-weight: 600;
           letter-spacing: convertPxToRem(1px);
+          color: #222222;
         }
         .contact-us-box-desc {
           letter-spacing: convertPxToRem(1px);
@@ -691,9 +705,14 @@
     }
   }
   .page-main {
-    .section-showcasing .showcasing-title {
-      line-height: 2.25rem;
-      font-size: 1.3rem;
+    .section-showcasing {
+      .showcasing-title {
+        line-height: 2.25rem;
+        font-size: 1.3rem;
+      }
+      .showcasing-card-list .card-item .item-desc {
+        padding: 0.8rem;
+      }
     }
     .section-about {
       .about-right .about-item {
@@ -874,9 +893,15 @@
 }
 @include respond-below(small) {
   .page-main {
-    .section-showcasing .showcasing-title {
-      font-size: 1.5rem;
-      padding-bottom: 0.5rem;
+    .section-showcasing {
+      .showcasing-title {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .showcasing-card-list .card-item .item-desc {
+        padding: 0.8rem;
+        letter-spacing: 0;
+      }
     }
     .slider-content-list {
       padding: 0;
