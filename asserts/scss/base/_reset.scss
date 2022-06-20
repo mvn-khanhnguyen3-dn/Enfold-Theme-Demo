@@ -102,25 +102,7 @@ section,
 summary {
   display: block;
 }
-.btn-primary {
-  padding: 15px 30px 13px;
-  background-color: #ffffff;
-  color: #888888;
-  border: 0.3px solid #888888;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  line-height: 15.6px;
-  i {
-    font-size: 18px;
-    padding: 0 3px;
-  }
-  &:hover {
-    color: #4f4f4f;
-    background-color: transparent;
-  }
-}
+
 .d-none {
   display: none;
 }
@@ -128,8 +110,4 @@ hr {
   margin: 2rem auto;
   position: relative;
   background-color: #fcfcfc;
-}
-section {
-  border: 1px solid #e1e1e1;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }

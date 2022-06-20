@@ -22,7 +22,6 @@ $colors: (
   primary: #c3512f,
   white: #fff,
   black: #111,
-  txt-black: #333,
   txt-gray-dark: #dddddd,
   txt-gray-title: #919191,
   txt-gray: #646464,
@@ -31,11 +30,11 @@ $colors: (
   border-gray-light: #f1f1f1,
   bg-gray: #e1e1e1,
   bg-black: #222222,
-  brand-html: #f2652a,
-  brand-css: #379ad7,
-  brand-js: #f1da4e,
-  brand-scss: #be5f8b,
-  brand-nodejs: #7cbe42,
+  txt-black: #333333,
+  txt-black-title: #222222,
+  txt-black-desc: #666666,
+  border-cls:#e1e1e1,
+  bg-white:#ffffff
 );
 
 // === z-index === //

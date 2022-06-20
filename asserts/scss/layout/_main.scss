@@ -40,26 +40,24 @@ strong {
 }
 p {
   color: #666666;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
 }
 p,
 h6 {
-  font-size: 13px !important;
+  font-size: 13px;
 }
 h2 {
   color: #444444;
 }
-span {
+.hr {
   position: relative;
-  hr {
-    width: 30%;
-    text-align: center;
-    margin: 2.5rem auto;
-    border-top: 0.5px solid #e1e1e1;
-  }
+  width: 30%;
+  margin: 30px auto;
+  border-top: 1px solid #e1e1e1;
+  display: block;
   .hr-style {
     position: absolute;
-    top: 0;
+    top: -1.2px;
     left: 0;
     background-color: #fcfcfc;
     transform: translate(-50%, -50%);
@@ -70,3 +68,10 @@ span {
     margin-top: 1px;
   }
 }
+.fa-small {
+  font-size: 11px !important;
+  padding: 0 !important;
+}
+// .avia-shadow {
+//   box-shadow: inset 0 1px 3px rgb(0, 0, 0 / 10%);
+// }

@@ -14,12 +14,17 @@ $grid-columns: 12;
   }
 }
 // End mixins for build grid
+$grid-gutter-y: 70px;
+$grid-gutter-x: 50px;
 $grid-gutter: 10px;
 $container-width: 1130px;
 .container {
-  padding: 70px 50px;
+  padding: 0 $grid-gutter-x;
   margin: 0 auto;
   max-width: $container-width;
+}
+.section {
+  padding: $grid-gutter-y $grid-gutter-x;
 }
 .row {
   display: flex;

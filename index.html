@@ -9,23 +9,33 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <title>Enfold Theme Demo &#8211; a Kriesi.at Theme</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <img src="./asserts//images/logo.png" class="header-logo" alt="logo" />
-        <ul class="menu-list">
-          <li class="menu-item"><a class="active" href="#">Home</a></li>
-          <li class="menu-item"><a href="#">Feature</a></li>
-          <li class="menu-item"><a href="#">Headers</a></li>
-          <li class="menu-item"><a href="#">Portfolio</a></li>
-          <li class="menu-item"><a href="#">Blog</a></li>
-          <li class="menu-item"><a class="active" href="#">Pages</a></li>
-          <li class="menu-item"><a href="#">Shortcodes</a></li>
-          <li class="menu-item"><a href="#">Shop</a></li>
-          <li class="menu-item d-block">
-            <i class="fa fa-search" aria-hidden="true"></i>
+      <div class="container flex align-center justify-between">
+        <a class="header-logo" href="">
+          <img
+            height="100"
+            width="300"
+            src="./asserts/images/logo.png"
+            alt="header-logo"
+        /></a>
+        <ul class="header-list">
+          <li class="list-item"><a class="active" href="">Home</a></li>
+          <li class="list-item"><a href="">Features</a></li>
+          <li class="list-item"><a href="">Headers</a></li>
+          <li class="list-item"><a href="">Portfolio</a></li>
+          <li class="list-item"><a href="">Blog</a></li>
+          <li class="list-item"><a class="active" href="">Pages</a></li>
+          <li class="list-item"><a href="">Shotcodes</a></li>
+          <li class="list-item"><a href="">Shop</a></li>
+          <li class="list-item">
+            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -92,29 +102,24 @@
               <p class="slide-desc">...and animate anything you want!</p>
             </div>
           </picture>
-
-          <!-- <input type="radio" name="image-slide" />
-          <picture aria-label="slider 3">
-            <img class="slide" src="./asserts/images/slide3.png" alt="slider 1" />
-          </picture> -->
         </div>
         <ul class="slider-content-list">
-          <div class="container flex justify-between">
+          <div class="container flex justify-between align-center">
             <li class="list-item">
               <h3 class="item-title">
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                A REAL TIME-SAVER
+                <i class="fa fa-clock-o" aria-hidden="true"></i> A REAL
+                TIME-SAVER
               </h3>
               <p class="item-desc">
                 Enfold is a powerful Theme that comes with an easy
-                <strong>drag and drop admin interface</strong>.Set up new sites
-                in no time!
+                <strong>drag and drop admin interface</strong>. <br />
+                Set up new sites in no time!
               </p>
             </li>
             <li class="list-item">
               <h3 class="item-title">
-                <i class="fa fa-address-book" aria-hidden="true"></i>
-                FREE UPDATES & SUPPORT
+                <i class="fa fa-life-ring" aria-hidden="true"></i> FREE UPDATES
+                & SUPPORT
               </h3>
               <p class="item-desc">
                 135.000 customers cant be wrong. <br />
@@ -124,8 +129,8 @@
             </li>
             <li class="list-item">
               <h3 class="item-title">
-                <i class="fa fa-rocket" aria-hidden="true"></i>
-                NO ROCKET SCIENCE
+                <i class="fa fa-rocket" aria-hidden="true"></i> NO ROCKET
+                SCIENCE
               </h3>
               <p class="item-desc">
                 Whether you have never touched a line of code or are a
@@ -137,12 +142,11 @@
         </ul>
       </section>
       <section class="section-showcasing">
-        <div class="container">
+        <div class="container section">
           <h2 class="showcasing-title">
             SHOWCASING YOUR WORK HAS NEVER BEEN MORE FUN
           </h2>
-          <span>
-            <hr />
+          <span class="hr">
             <span class="hr-style"></span>
           </span>
           <p class="showcasing-desc">
@@ -166,8 +170,7 @@
               <p class="item-desc">Single Portfolio: Big Slider</p>
             </li>
           </ul>
-          <span>
-            <hr />
+          <span class="hr">
             <span class="hr-style"></span>
           </span>
           <a href="#" class="view-more"
@@ -176,7 +179,7 @@
         </div>
       </section>
       <section class="section-feature">
-        <div class="container flex">
+        <div class="container section flex">
           <div class="feature-img">
             <img src="./asserts/images/feature1.jpg" alt="" />
             <ul class="img-list flex">
@@ -205,8 +208,7 @@
           </div>
           <div class="feature-content">
             <h2 class="feature-content-title">SOME ENFOLD CORE FEATURES</h2>
-            <span>
-              <hr />
+            <span class="hr">
               <span class="hr-style"></span>
             </span>
             <p class="feature-content-desc">
@@ -235,8 +237,7 @@
                 iPads, Retina MacBooks, etc
               </li>
             </ul>
-            <span>
-              <hr />
+            <span class="hr">
               <span class="hr-style"></span>
             </span>
             <button class="btn-primary btn-learn-more">
@@ -245,12 +246,11 @@
           </div>
         </div>
       </section>
-      <section class="section-about">
-        <div class="container flex">
+      <section class="section-about avia-shadow">
+        <div class="container section flex">
           <div class="about-left">
             <h2 class="about-title">ABOUT US</h2>
-            <span>
-              <hr />
+            <span class="hr">
               <span class="hr-style"></span>
             </span>
             <ul class="about-left-list">
@@ -284,19 +284,19 @@
               <li class="left-list-item">
                 <p>Aenean <strong>vulputate</strong> eleifend tellus.</p>
               </li>
-              <span>
-                <hr />
+              <span class="hr">
                 <span class="hr-style"></span>
               </span>
               <button class="btn-primary btn-checkout">
-                <i class="fa fa-envelope-open" aria-hidden="true"></i> Check out
-                our Team
+                <i class="fa-solid fa-user-group fa-small"></i> Check out our Team
               </button>
             </ul>
           </div>
           <ul class="about-right">
             <li class="about-item">
-              <i class="fa fa-cogs icon-item" aria-hidden="true"></i>
+              <div class="icon-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
               <div class="about-content">
                 <h3 class="item-title">CRAFTED WITH LOVE</h3>
                 <p class="item-desc">
@@ -307,7 +307,9 @@
               </div>
             </li>
             <li class="about-item">
-              <i class="fa fa-music icon-item" aria-hidden="true"></i>
+              <div class="icon-item">
+                <i class="fa-solid fa-music"></i>
+              </div>
               <div class="about-content">
                 <h3 class="item-title">MELODICAL BY NATURE</h3>
                 <p class="item-desc">
@@ -317,7 +319,9 @@
               </div>
             </li>
             <li class="about-item">
-              <i class="fa fa-bolt icon-item" aria-hidden="true"></i>
+              <div class="icon-item">
+                <i class="fa fa-bolt" aria-hidden="true"></i>
+              </div>
               <div class="about-content">
                 <h3 class="item-title">LIGHTNING FAST</h3>
                 <p class="item-desc">
@@ -328,16 +332,15 @@
               </div>
             </li>
             <li class="about-item">
-              <i
-                class="fa fa-flag icon-item d-none-affter"
-                aria-hidden="true"
-              ></i>
+              <div class="icon-item d-none-affter">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+              </div>
               <div class="about-content">
                 <h3 class="item-title">FREAKY FLAGS</h3>
                 <p class="item-desc">
                   Nullam quis ante. Etiam sit
-                  <strong>amet orci eget eros faucibus</strong>
-                  tincidunt. Donec vitae sapien ut libero venenatis faucibus.
+                  <strong>amet orci eget </strong>eros faucibus tincidunt. Donec
+                  vitae sapien ut libero venenatis faucibus.
                 </p>
               </div>
             </li>
@@ -345,7 +348,7 @@
         </div>
       </section>
       <section class="section-mobile">
-        <div class="container flex">
+        <div class="container section section flex">
           <img
             class="mobile-img"
             src="./asserts/images/iphoneIpad-495x400.png"
@@ -353,8 +356,7 @@
           />
           <div class="mobile-content flex flex-column justify-between">
             <h2 class="mobile-title">MOBILE READY</h2>
-            <span>
-              <hr />
+            <span class="hr">
               <span class="hr-style"></span>
             </span>
             <div class="mobile-desc">
@@ -370,101 +372,110 @@
                 elementum semper nisi.Aenean vulputate eleifend tellus.
               </p>
             </div>
-            <span>
-              <hr />
+            <span class="hr">
               <span class="hr-style"></span>
             </span>
             <button class="btn-primary btn-mobile">
-              <i class="fa fa-mobile" aria-hidden="true"></i> Mobile Features
+              <i class="fa-solid fa-mobile-screen fa-small"></i> Mobile Features
             </button>
           </div>
         </div>
       </section>
       <section class="section-about-us">
-        <div class="container">
+        <div class="container section">
           <h2 class="about-us-title">WHAT OTHERS SAY ABOUT US</h2>
-          <span>
-            <hr />
+          <span class="hr">
             <span class="hr-style"></span>
           </span>
-          <ul class="about-us-content flex flex-wrap justify-between">
-            <li class="about-us-item">
-              <img src="./asserts/images/team-1-180x180.jpg" alt="" />
-              <div class="item-desc">
-                <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
-                  ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
-                  eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-                </p>
-                <h6 class="item-name">Martha M. Masters</h6>
-                <h6 class="item-position">
-                  Marketing – <strong>WikiTravel</strong>
-                </h6>
-              </div>
-            </li>
-            <li class="about-us-item">
-              <img src="./asserts/images/team-7-180x180.jpg" alt="" />
-              <div class="item-desc">
-                <p>
-                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                  justo. Nullam dictum felis eu pede mollis pretium. Integer
-                  tincidunt. Cras dapibus.
-                </p>
-                <h6 class="item-name">
-                  Anna Vandana
-                  <p class="item-position">CEO – <strong>Media Wiki</strong></p>
-                </h6>
-              </div>
-            </li>
-            <li class="about-us-item">
-              <img src="./asserts/images/team-11-180x180.jpg" alt="" />
 
-              <div class="item-desc">
-                <p>
-                  Nulla consequat massa quis enim. Donec pede justo, fringilla
-                  vel, aliquet nec, vulputate eget, arcu.
-                </p>
-                <h6 class="item-name">
-                  Maxi Milli
-                  <p class="item-position">
-                    Public Relations – <strong>Max Mobilcom</strong>
+          <div class="about-us-content">
+            <div class="about-us-inner">
+              <div class="about-us-item">
+                <img src="./asserts/images/team-1-180x180.jpg" alt="" />
+                <div class="item-desc">
+                  <p>
+                    Nulla consequat massa quis enim. Donec pede justo, fringilla
+                    vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+                    dapibus.
                   </p>
-                </h6>
+                  <h6 class="item-name">Martha M. Masters</h6>
+                  <h6 class="item-position">
+                    Marketing – <strong>WikiTravel</strong>
+                  </h6>
+                </div>
               </div>
-            </li>
-            <li class="about-us-item">
-              <img src="./asserts/images/team-5-180x180.jpg" alt="" />
+            </div>
+            <div class="about-us-inner">
+              <div class="about-us-item">
+                <img src="./asserts/images/team-7-180x180.jpg" alt="" />
+                <div class="item-desc">
+                  <p>
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                    justo. Nullam dictum felis eu pede mollis pretium. Integer
+                    tincidunt. Cras dapibus.
+                  </p>
+                  <h6 class="item-name">
+                    Anna Vandana
+                    <p class="item-position">
+                      CEO – <strong>Media Wiki</strong>
+                    </p>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-us-content">
+            <div class="about-us-inner border-none">
+              <div class="about-us-item">
+                <img src="./asserts/images/team-11-180x180.jpg" alt="" />
 
-              <div class="item-desc">
-                <p>
-                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                  justo. Nullam dictum felis eu pede mollis pretium. Integer
-                  tincidunt. Cras dapibus.
-                </p>
-                <h6 class="item-name">
-                  Dr. Dosist
-                  <p class="item-position">
-                    Dean of Medicine – <strong>Doom Inc</strong>
+                <div class="item-desc">
+                  <p>
+                    Nulla consequat massa quis enim. Donec pede justo, fringilla
+                    vel, aliquet nec, vulputate eget, arcu.
                   </p>
-                </h6>
+                  <h6 class="item-name">
+                    Maxi Milli
+                    <p class="item-position">
+                      Public Relations – <strong>Max Mobilcom</strong>
+                    </p>
+                  </h6>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="about-us-inner border-none">
+              <div class="about-us-item">
+                <img src="./asserts/images/team-5-180x180.jpg" alt="" />
+
+                <div class="item-desc">
+                  <p>
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                    justo. Nullam dictum felis eu pede mollis pretium. Integer
+                    tincidunt. Cras dapibus.
+                  </p>
+                  <h6 class="item-name">
+                    Dr. Dosist
+                    <p class="item-position">
+                      Dean of Medicine – <strong>Doom Inc</strong>
+                    </p>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-contact-us">
-        <div class="container">
+        <div class="container section">
           <h2 class="contact-us-title">IN CASE YOU NEED HELP</h2>
           <p class="contact-us-title-desc">
             Here are several ways to contact us
           </p>
           <div class="contact-us-content flex justify-between">
             <div class="contact-us-box">
-              <i
-                class="fa fa-address-book icon-contact-us"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-question icon-contact-us" aria-hidden="true"></i>
               <h3 class="contact-us-box-title">PRESALES QUESTION?</h3>
               <p class="contact-us-box-desc">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -473,10 +484,7 @@
               <a href="#"><strong>Learn more</strong></a>
             </div>
             <div class="contact-us-box">
-              <i
-                class="fa fa-address-card icon-contact-us"
-                aria-hidden="true"
-              ></i>
+              <i class="fa fa-life-ring icon-contact-us" aria-hidden="true"></i>
               <h3 class="contact-us-box-title">NEED SUPPORT?</h3>
               <p class="contact-us-box-desc">
                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
@@ -485,7 +493,7 @@
               <a href="#"><strong>Learn more</strong></a>
             </div>
             <div class="contact-us-box">
-              <i class="fa fa-apple icon-contact-us" aria-hidden="true"></i>
+              <i class="fa-solid fa-rectangle-list icon-contact-us"></i>
               <h3 class="contact-us-box-title">CHECK FORUM</h3>
               <p class="contact-us-box-desc">
                 Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
@@ -527,7 +535,7 @@
           </p>
           <ul class="footer-left-socials">
             <li class="social-item flex align-center justify-between">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa-brands fa-twitter"></i>
               <h6 class="link-social">
                 Follow
                 <p>on Tiwtter</p>
