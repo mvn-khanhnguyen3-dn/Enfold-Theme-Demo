@@ -206,11 +206,11 @@
   .slider-content-list {
     border: 1px solid map-get($colors, border-cls);
     .container {
-      gap: 1.5rem;
+      gap: 2rem;
       padding: 50px;
     }
     .list-item {
-      width: 300px;
+      width: 312px;
       text-align: left;
       .item-title {
         border: medium none;
@@ -520,7 +520,10 @@
         width: 50%;
         border-right: 1px dashed #e1e1e1;
         border-bottom: 1px dashed #e1e1e1;
-        padding: 20px;
+        padding: 20px 0 20px 20px;
+        &:first-child {
+          padding-left: 0;
+        }
         &:nth-child(2) {
           border-right: none;
         }
@@ -562,6 +565,9 @@
     background-position: top center;
     background-size: cover;
     line-height: convertPxToRem(50px);
+    .container {
+      padding: 50px;
+    }
     .contact-us-title,
     .contact-us-title-desc {
       color: #fff;
@@ -571,25 +577,24 @@
       font-size: convertPxToRem(28px);
     }
     .contact-us-title-desc {
-      padding-bottom: convertPxToRem(80px);
+      padding-bottom: convertPxToRem(60px);
     }
     .contact-us-content {
       .contact-us-box {
         background-color: #fff;
-        padding: convertPxToRem(12px);
-        border-radius: convertPxToRem(5px);
+        padding: convertPxToRem(8px) convertPxToRem(11px);
+        border-radius: convertPxToRem(3px);
         position: relative;
-        width: 300px;
-        margin-left: 4.2rem;
+        width: 312px;
+        margin-left: 4rem;
         &:first-child {
           margin-left: 0;
         }
         .contact-us-box-title {
-          padding: 1.5rem 0 0 0;
+          padding: 1rem 0 0 0;
           font-size: convertPxToRem(16px);
           font-weight: 600;
           letter-spacing: convertPxToRem(1px);
-
           color: #222222;
         }
         .contact-us-box-desc {
@@ -603,9 +608,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           background-color: #c3512f;
-          height: convertPxToRem(55px);
-          width: convertPxToRem(55px);
-          line-height: convertPxToRem(55px);
+          height: convertPxToRem(53px);
+          width: convertPxToRem(53px);
+          line-height: convertPxToRem(53px);
           font-size: convertPxToRem(20px);
           text-align: center;
           border-radius: convertPxToRem(500px);

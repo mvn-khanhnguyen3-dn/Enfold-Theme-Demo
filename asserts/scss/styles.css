@@ -1675,12 +1675,12 @@ h2 {
 }
 
 .page-main .slider-content-list .container {
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 50px;
 }
 
 .page-main .slider-content-list .list-item {
-  width: 300px;
+  width: 312px;
   text-align: left;
 }
 
@@ -2053,7 +2053,11 @@ h2 {
   width: 50%;
   border-right: 1px dashed #e1e1e1;
   border-bottom: 1px dashed #e1e1e1;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
+}
+
+.page-main .section-about-us .about-us-content .about-us-inner:first-child {
+  padding-left: 0;
 }
 
 .page-main .section-about-us .about-us-content .about-us-inner:nth-child(2) {
@@ -2105,6 +2109,10 @@ h2 {
   line-height: 3.125rem;
 }
 
+.page-main .section-contact-us .container {
+  padding: 50px;
+}
+
 .page-main .section-contact-us .contact-us-title,
 .page-main .section-contact-us .contact-us-title-desc {
   color: #fff;
@@ -2116,16 +2124,16 @@ h2 {
 }
 
 .page-main .section-contact-us .contact-us-title-desc {
-  padding-bottom: 5rem;
+  padding-bottom: 3.75rem;
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box {
   background-color: #fff;
-  padding: 0.75rem;
-  border-radius: 0.3125rem;
+  padding: 0.5rem 0.6875rem;
+  border-radius: 0.1875rem;
   position: relative;
-  width: 300px;
-  margin-left: 4.2rem;
+  width: 312px;
+  margin-left: 4rem;
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box:first-child {
@@ -2133,7 +2141,7 @@ h2 {
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box .contact-us-box-title {
-  padding: 1.5rem 0 0 0;
+  padding: 1rem 0 0 0;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -2153,9 +2161,9 @@ h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #c3512f;
-  height: 3.4375rem;
-  width: 3.4375rem;
-  line-height: 3.4375rem;
+  height: 3.3125rem;
+  width: 3.3125rem;
+  line-height: 3.3125rem;
   font-size: 1.25rem;
   text-align: center;
   border-radius: 31.25rem;
