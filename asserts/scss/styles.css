@@ -1686,11 +1686,17 @@ h2 {
 
 .page-main .slider-content-list .list-item .item-title {
   border: medium none;
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
   clear: none;
-  font-size: 16.25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
   color: #222222;
 }
 
@@ -1706,7 +1712,7 @@ h2 {
 }
 
 .page-main .slider-content-list .list-item .item-desc {
-  line-height: 1.34375rem;
+  line-height: 1.3125rem;
   font-size: 13px;
   padding: 0;
   letter-spacing: 0.5px;
@@ -1881,7 +1887,7 @@ h2 {
 .page-main .section-about .about-left .hr {
   left: 30%;
   width: 35%;
-  margin: 50px auto;
+  margin: 45px auto;
 }
 
 .page-main .section-about .about-left .hr .hr-style {
@@ -1910,7 +1916,7 @@ h2 {
 }
 
 .page-main .section-about .about-right .about-item {
-  padding-bottom: 4.375rem;
+  padding-bottom: 4.0625rem;
 }
 
 .page-main .section-about .about-right .about-item:last-child {
@@ -2134,6 +2140,9 @@ h2 {
   position: relative;
   width: 312px;
   margin-left: 4rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .page-main .section-contact-us .contact-us-content .contact-us-box:first-child {

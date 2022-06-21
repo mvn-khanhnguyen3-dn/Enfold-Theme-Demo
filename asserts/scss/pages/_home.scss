@@ -214,11 +214,13 @@
       text-align: left;
       .item-title {
         border: medium none;
-        margin: 0 0 16px 0;
+        margin: 0 0 15px 0;
         letter-spacing: 1px;
         text-transform: uppercase;
         clear: none;
-        font-size: 16.25px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
         color: map-get($colors, txt-black-title);
         i {
           font-size: 21px;
@@ -231,7 +233,7 @@
         }
       }
       .item-desc {
-        line-height: convertPxToRem(21.5px);
+        line-height: convertPxToRem(21px);
         font-size: 13px;
         padding: 0;
         letter-spacing: 0.5px;
@@ -375,7 +377,7 @@
       .hr {
         left: 30%;
         width: 35%;
-        margin: 50px auto;
+        margin: 45px auto;
         .hr-style {
           left: 100%;
         }
@@ -402,7 +404,7 @@
       height: 100%;
       text-align: left;
       .about-item {
-        padding-bottom: convertPxToRem(70px);
+        padding-bottom: convertPxToRem(65px);
         &:last-child {
           padding: 0;
         }
@@ -587,6 +589,8 @@
         position: relative;
         width: 312px;
         margin-left: 4rem;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
         &:first-child {
           margin-left: 0;
         }
