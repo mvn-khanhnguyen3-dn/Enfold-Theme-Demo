@@ -15,6 +15,7 @@
   p {
     font-size: 13px;
     color: #919191;
+    letter-spacing: 0;
   }
   h6 {
     width: 100%;
@@ -23,8 +24,8 @@
   .footer-middle-one,
   .footer-middle-two,
   .footer-right {
-    width: calc(100% / 4);
-    padding: 25px 0;
+    min-width: 20.5%;
+    padding: 40px 0;
   }
   .footer-middle-one {
     .footer-middle-content {
@@ -32,19 +33,31 @@
         display: flex;
         gap: 10px;
         img {
-          max-width: 100%;
+          max-width: 17%;
           height: 100%;
           border: 4px solid #444444;
           color: map-get($colors, txt-gray-dark);
+        }
+        p {
+          font-size: 11px;
+          text-align: left;
+          font-weight: 700;
+          .new-time {
+            font-size: 10px;
+          }
         }
       }
     }
   }
   .footer-title {
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     color: #919191;
     letter-spacing: 1px;
     font-size: 14px;
+  }
+  .footer-title-category {
+    padding-top: 2.5rem;
+    padding-bottom: 0.6rem !important;
   }
   .footer-left {
     .footer-left-desc {
@@ -56,9 +69,9 @@
     display: flex;
     .social-item {
       .link-social {
-        letter-spacing: 1px;
         color: map-get($colors, txt-gray-title);
-        width: 5rem;
+        width: 100%;
+        margin-right: 1rem;
         p {
           font-size: 10px !important;
           color: map-get($colors, white);
@@ -72,8 +85,8 @@
         text-shadow: convertPxToRem(1px) convertPxToRem(1px) convertPxToRem(1px)
           #17acd8;
         padding: convertPxToRem(10px);
-        font-size: 16px;
-        margin-right: 10px;
+        font-size: 13px;
+        margin-right: 5px;
         &:last-child {
           margin: 0;
         }
@@ -94,12 +107,25 @@
       color: #fff;
       font-weight: 500;
       margin: 1px 0;
+      &:hover {
+        text-decoration: underline;
+        color: #aaaaaa;
+        text-shadow: none;
+      }
     }
   }
   .footer-middle-category-list {
     .list-item {
       color: map-get($colors, white);
       font-weight: 500;
+      font-size: 13px;
+      cursor: pointer;
+      letter-spacing: 1px;
+      &:hover {
+        text-decoration: underline;
+        color: #aaaaaa;
+        text-shadow: none;
+      }
     }
   }
   .footer-right {
@@ -116,14 +142,14 @@
     }
   }
   .footer-bottom {
-    margin-top: convertPxToRem(50px);
+    margin-top: convertPxToRem(15px);
     background-color: #333333;
-    color: #eeeeee;
+    color: #dddddd;
     padding: convertPxToRem(10px) 0;
     a {
       font-size: convertPxToRem(11px);
-      font-weight: 600;
-      color: map-get($colors, white);
+      font-weight: 100;
+      color: #dddddd;
     }
     .footer-bottom-right-list {
       .list-item {

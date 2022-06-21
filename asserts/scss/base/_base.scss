@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
   font-weight: map-get($font-weight, medium);
-  font-family: "open sans", Helvetica, Arial, sans-serif;
+  font-family: "open sans";
 }
 h1 {
   font-size: map-get($h-font-size, h1);

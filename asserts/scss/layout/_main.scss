@@ -32,6 +32,7 @@
 }
 strong {
   color: #c3512f;
+  font-weight: bold;
 }
 .section-contact-us {
   strong {
@@ -40,7 +41,7 @@ strong {
 }
 p {
   color: #666666;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.5px;
 }
 p,
 h6 {
@@ -52,7 +53,7 @@ h2 {
 .hr {
   position: relative;
   width: 30%;
-  margin: 30px auto;
+  margin: 35px auto;
   border-top: 1px solid #e1e1e1;
   display: block;
   .hr-style {
