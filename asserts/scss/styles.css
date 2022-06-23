@@ -1037,7 +1037,7 @@ table th, table td {
 
 .page-header {
   background-color: #ffffff;
-  max-height: 88px;
+  min-height: 88px;
   border: 1px solid #e1e1e1;
 }
 
@@ -1061,21 +1061,26 @@ table th, table td {
   transition: opacity 0.4s ease-in-out;
 }
 
-.page-header .header-list {
-  line-height: 88px;
-}
-
 .page-header .header-list .list-item {
   display: inline-block;
+  position: relative;
   color: #797979;
   font-size: 13px;
   font-weight: 600;
-  line-height: 80px;
+  line-height: 88px;
   text-align: left;
 }
 
 .page-header .header-list .list-item:first-child, .page-header .header-list .list-item:nth-child(6) {
   text-align: center;
+}
+
+.page-header .header-list .list-item:first-child::before, .page-header .header-list .list-item:nth-child(6)::before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  width: 100%;
   border-bottom: 3px solid #c3512f;
 }
 
@@ -1084,10 +1089,11 @@ table th, table td {
   font-family: "Open Sans";
   font-size: 13px;
   font-weight: 600;
-  padding: 0px 13px;
+  padding: 0px 11.5px;
   text-align: left;
   text-decoration: none;
   line-height: inherit;
+  letter-spacing: 0.1px;
 }
 
 .page-header .header-list .active {
@@ -1246,7 +1252,7 @@ h2 {
 }
 
 .page-footer ul li {
-  margin: 10px 0;
+  margin: 8px 0;
   font-size: 13px;
 }
 
@@ -1305,7 +1311,7 @@ h2 {
 }
 
 .page-footer .footer-left .footer-left-desc {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   color: #dddddd;
 }
 
@@ -1330,15 +1336,15 @@ h2 {
   color: #fff;
   background-color: #46d4fe;
   border-color: #46d4fe;
-  border-radius: 5px;
+  border-radius: 3px;
   text-shadow: 0.0625rem 0.0625rem 0.0625rem #17acd8;
-  padding: 0.625rem;
-  font-size: 13px;
-  margin-right: 5px;
+  padding: 0.4375rem;
+  font-size: 16px;
+  margin-right: 7px;
 }
 
 .page-footer .footer-left-socials .social-item i:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 .page-footer .footer-left-socials .social-item .fa-rss {
@@ -1368,7 +1374,7 @@ h2 {
   font-weight: 500;
   font-size: 13px;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .page-footer .footer-middle-category-list .list-item:hover {
@@ -1382,15 +1388,17 @@ h2 {
 }
 
 .page-footer .footer-right-list .list-item span {
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
+  letter-spacing: 0.3px;
 }
 
 .page-footer .footer-bottom {
-  margin-top: 0.9375rem;
+  margin-top: 0.625rem;
   background-color: #333333;
   color: #dddddd;
   padding: 0.625rem 0;
+  border-top: 0.5px solid #444444;
 }
 
 .page-footer .footer-bottom a {
@@ -1472,10 +1480,10 @@ h2 {
 }
 
 .page-main .section-slider .wrapper .slider-content .logo-slide {
-  top: 25%;
-  left: 10%;
-  width: 20%;
-  height: 20%;
+  top: 30%;
+  left: 14%;
+  width: 21%;
+  height: 18%;
   -webkit-animation: loop-slide 3s;
           animation: loop-slide 3s;
   font-size: 13px;
@@ -1483,26 +1491,26 @@ h2 {
 
 .page-main .section-slider .wrapper .slider-content .logo-slide-desc {
   top: 50%;
-  left: 10%;
-  width: 20%;
-  height: 10%;
+  left: 14%;
+  width: 21%;
+  height: 8%;
   -webkit-animation: loop-slide 3s;
           animation: loop-slide 3s;
   font-size: 13px;
 }
 
 .page-main .section-slider .wrapper .slider-content .mac {
-  top: 10%;
-  right: 18%;
-  width: 35%;
-  height: 100%;
+  top: 15%;
+  right: 30%;
+  width: 30%;
+  height: 90%;
   -webkit-animation: loop 3s;
           animation: loop 3s;
 }
 
 .page-main .section-slider .wrapper .slider-content .iphone {
   top: 50%;
-  left: 35%;
+  left: 30%;
   width: 20%;
   height: 50%;
   -webkit-animation: loop-iphone 2s;
@@ -1510,10 +1518,10 @@ h2 {
 }
 
 .page-main .section-slider .wrapper .slider-content .mac-pro {
-  top: 50%;
-  right: 5%;
-  width: 25%;
-  height: 50%;
+  top: 40%;
+  right: 15%;
+  width: 30%;
+  height: 59%;
   -webkit-animation: loop-mac 2s;
           animation: loop-mac 2s;
 }
@@ -2038,7 +2046,7 @@ h2 {
 
 .page-main .section-about-us p {
   color: #888888;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.3px;
 }
 
 .page-main .section-about-us strong {
@@ -2060,11 +2068,15 @@ h2 {
   width: 50%;
   border-right: 1px dashed #e1e1e1;
   border-bottom: 1px dashed #e1e1e1;
-  padding: 20px 0 20px 20px;
+  padding: 20px;
 }
 
 .page-main .section-about-us .about-us-content .about-us-inner:first-child {
   padding-left: 0;
+}
+
+.page-main .section-about-us .about-us-content .about-us-inner:last-child {
+  padding-right: 0;
 }
 
 .page-main .section-about-us .about-us-content .about-us-inner:nth-child(2) {

@@ -8,7 +8,7 @@
   }
   ul {
     li {
-      margin: 10px 0;
+      margin: 8px 0;
       font-size: 13px;
     }
   }
@@ -61,7 +61,7 @@
   }
   .footer-left {
     .footer-left-desc {
-      padding-bottom: 30px;
+      padding-bottom: 40px;
       color: #dddddd;
     }
   }
@@ -81,14 +81,14 @@
         color: map-get($colors, white);
         background-color: #46d4fe;
         border-color: #46d4fe;
-        border-radius: 5px;
+        border-radius: 3px;
         text-shadow: convertPxToRem(1px) convertPxToRem(1px) convertPxToRem(1px)
           #17acd8;
-        padding: convertPxToRem(10px);
-        font-size: 13px;
-        margin-right: 5px;
+        padding: convertPxToRem(7px);
+        font-size: 16px;
+        margin-right: 7px;
         &:last-child {
-          margin: 0;
+          margin-right: 0;
         }
       }
       .fa-rss {
@@ -120,7 +120,7 @@
       font-weight: 500;
       font-size: 13px;
       cursor: pointer;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       &:hover {
         text-decoration: underline;
         color: #aaaaaa;
@@ -136,16 +136,18 @@
   .footer-right-list {
     .list-item {
       span {
-        font-weight: 500;
+        font-weight: 700;
         color: map-get($colors, white);
+        letter-spacing: 0.3px;
       }
     }
   }
   .footer-bottom {
-    margin-top: convertPxToRem(15px);
+    margin-top: convertPxToRem(10px);
     background-color: #333333;
     color: #dddddd;
     padding: convertPxToRem(10px) 0;
+    border-top: 0.5px solid #444444;
     a {
       font-size: convertPxToRem(11px);
       font-weight: 100;

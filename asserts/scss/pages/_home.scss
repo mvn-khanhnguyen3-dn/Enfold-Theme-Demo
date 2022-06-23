@@ -41,40 +41,40 @@
           filter: none;
         }
         .logo-slide {
-          top: 25%;
-          left: 10%;
-          width: 20%;
-          height: 20%;
+          top: 30%;
+          left: 14%;
+          width: 21%;
+          height: 18%;
           animation: loop-slide 3s;
           font-size: 13px;
         }
         .logo-slide-desc {
           top: 50%;
-          left: 10%;
-          width: 20%;
-          height: 10%;
+          left: 14%;
+          width: 21%;
+          height: 8%;
           animation: loop-slide 3s;
           font-size: 13px;
         }
         .mac {
-          top: 10%;
-          right: 18%;
-          width: 35%;
-          height: 100%;
+          top: 15%;
+          right: 30%;
+          width: 30%;
+          height: 90%;
           animation: loop 3s;
         }
         .iphone {
           top: 50%;
-          left: 35%;
+          left: 30%;
           width: 20%;
           height: 50%;
           animation: loop-iphone 2s;
         }
         .mac-pro {
-          top: 50%;
-          right: 5%;
-          width: 25%;
-          height: 50%;
+          top: 40%;
+          right: 15%;
+          width: 30%;
+          height: 59%;
           animation: loop-mac 2s;
         }
         .iphone-hand {
@@ -506,7 +506,7 @@
     }
     p {
       color: #888888;
-      letter-spacing: 0.1px;
+      letter-spacing: 0.3px;
     }
     strong {
       font-weight: 500;
@@ -523,9 +523,12 @@
         width: 50%;
         border-right: 1px dashed #e1e1e1;
         border-bottom: 1px dashed #e1e1e1;
-        padding: 20px 0 20px 20px;
+        padding: 20px;
         &:first-child {
           padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
         }
         &:nth-child(2) {
           border-right: none;
