@@ -202,10 +202,9 @@
     }
   }
   .slider-content-list {
-    gap: 2rem;
+    gap: 3rem;
     padding: 50px;
-    .list-item {
-      width: 312px;
+    .slider-item {
       text-align: left;
       .item-title {
         border: medium none;
@@ -644,7 +643,7 @@
   }
   .page-main {
     .container {
-      padding: convertPxToRem(70px) 2rem;
+      padding: convertPxToRem(70px) convertPxToRem(50px);
     }
     .section-about-us .about-us-content {
       .about-us-inner {
@@ -736,6 +735,9 @@
     }
   }
   .page-main {
+    .slider-content-list {
+      gap: 1.5rem;
+    }
     .section-showcasing {
       .showcasing-title {
         line-height: 2.25rem;
@@ -753,26 +755,9 @@
     .section-about-us {
       .about-us-content {
         flex-direction: column;
-        .about-us-item {
-          width: 100% !important;
-        }
         .about-us-inner {
           padding: 20px 0;
         }
-      }
-    }
-    .section-slider .wrapper .slider-content {
-      .logo-slide {
-        top: 20%;
-        width: 30%;
-        left: 5%;
-        z-index: 2;
-      }
-      .logo-slide-desc {
-        top: 45%;
-        left: 5%;
-        width: 30%;
-        z-index: 2;
       }
     }
     .section-contact-us .contact-us-content {
@@ -784,51 +769,50 @@
     }
     .section-slider .wrapper {
       min-height: 308px;
-      .slider-content {
-        .logo-slide {
-          top: 20%;
-          width: 30%;
-          left: 8%;
-          z-index: 2;
-        }
-        .logo-slide-desc {
-          top: 45%;
-          left: 8%;
-          width: 30%;
-          z-index: 2;
-        }
-        .mac {
-          top: 20%;
-          right: 8%;
-          width: 35%;
-          height: 70%;
-        }
-        .iphone {
-          top: 60%;
-          left: 55%;
-          width: 15%;
-          height: 35%;
-        }
-        .mac-pro {
-          top: 60%;
-          right: 0;
-          width: 25%;
-          height: 30%;
-        }
-        .iphone-hand {
-          left: -20%;
-        }
-        .slide-title {
-          width: 40%;
-          left: 50%;
-          padding: 0.5rem 0rem;
-          font-size: 0.5rem;
-        }
-        .slide-desc {
-          top: 32%;
-          width: 40%;
-          left: 50%;
-        }
+
+      .logo-slide {
+        top: 20%;
+        width: 30%;
+        left: 8%;
+        z-index: 2;
+      }
+      .logo-slide-desc {
+        top: 45%;
+        left: 8%;
+        width: 30%;
+        z-index: 2;
+      }
+      .mac {
+        top: 20%;
+        right: 8%;
+        width: 35%;
+        height: 70%;
+      }
+      .iphone {
+        top: 60%;
+        left: 55%;
+        width: 15%;
+        height: 35%;
+      }
+      .mac-pro {
+        top: 60%;
+        right: 0;
+        width: 25%;
+        height: 30%;
+      }
+      .iphone-hand {
+        left: -20%;
+      }
+      .slide-title {
+        width: 40%;
+        left: 50%;
+        padding: 0.5rem 0rem;
+        font-size: 0.5rem;
+      }
+      .slide-desc {
+        top: 32%;
+        width: 40%;
+        left: 50%;
       }
     }
   }
@@ -836,10 +820,9 @@
 @include respond-below(medium) {
   .page-main {
     .slider-content-list {
-      .container {
-        flex-direction: column;
-      }
-      .list-item {
+      flex-direction: column;
+      padding: 50px;
+      .slider-item {
         min-width: 100%;
       }
     }
@@ -952,7 +935,7 @@
       .container {
         gap: 1rem;
       }
-      .list-item {
+      .slider-item {
         width: 100%;
         .item-title {
           font-size: 1rem;
