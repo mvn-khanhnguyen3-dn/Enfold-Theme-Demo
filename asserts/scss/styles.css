@@ -1004,9 +1004,12 @@ table th, table td {
   background-color: #ffffff;
   min-height: 88px;
   border: 1px solid #e1e1e1;
+  transition: 0.2s all ease-in-out;
+  z-index: 10;
 }
 .page-header .header-logo {
   max-width: 192px;
+  transition: 0.1s all ease-in;
 }
 .page-header .header-logo img {
   padding: 0;
@@ -1055,6 +1058,22 @@ table th, table td {
 }
 .page-header .header-list .active {
   color: #333333 !important;
+}
+
+.page-header-sm {
+  position: fixed;
+  width: 100%;
+  min-height: auto;
+  transition: 0.6s all ease-in-out;
+}
+.page-header-sm .header-logo {
+  max-width: 100px;
+  transition: 0.6s all ease-in-out;
+  height: auto;
+}
+.page-header-sm .header-list .list-item {
+  line-height: 44px;
+  transition: 0.6s all ease-in-out;
 }
 
 @-webkit-keyframes loop-slide {
@@ -1947,6 +1966,33 @@ h2 {
 }
 .page-main .section-brand .brand-list .brand-item {
   max-width: 18%;
+}
+.page-main .btn-scroll {
+  color: #eeeeee;
+  border: 1px solid #444444;
+  background-color: #333333;
+  opacity: 0.7;
+  visibility: visible;
+  outline: none;
+  position: fixed;
+  border-radius: 2px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1030;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.page-main .btn-scroll:hover {
+  color: #c3512f;
+  border: 1px solid #e1e1e1;
+  background-color: #fcfcfc;
 }
 
 @media (max-width: 1023px) {
