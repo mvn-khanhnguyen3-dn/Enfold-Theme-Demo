@@ -76,3 +76,10 @@ h2 {
 // .avia-shadow {
 //   box-shadow: inset 0 1px 3px rgb(0, 0, 0 / 10%);
 // }
+.section-title {
+  color: #444444;
+  font-size: convertPxToRem(28px);
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: convertPxToRem(31px);
+}

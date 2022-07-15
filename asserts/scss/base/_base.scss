@@ -8,7 +8,6 @@ body {
     Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: map-get($font-weight, normal);
   font-size: $font-size-base;
-  letter-spacing: -0.025em;
 }
 p {
   line-height: 1.45;

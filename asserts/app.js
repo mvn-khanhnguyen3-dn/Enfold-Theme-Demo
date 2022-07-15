@@ -7,13 +7,14 @@ const scrollToTop = () => {
 };
 
 document.addEventListener("scroll", (e) => {
-  //   console.log(window.scrollY);
   const btn = document.querySelector(".btn-scroll");
   const header = document.querySelector(".page-header");
-  if (window.scrollY > 0) {
-    header.classList.add("page-header-sm");
-  } else {
-    header.classList.remove("page-header-sm");
+  if (window.innerWidth > 960) {
+    if (window.scrollY > 0) {
+      header.classList.add("page-header-sm");
+    } else {
+      header.classList.remove("page-header-sm");
+    }
   }
   if (window.scrollY > 630) {
     btn.style.opacity = 1;

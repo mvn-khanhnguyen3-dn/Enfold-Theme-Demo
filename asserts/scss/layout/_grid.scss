@@ -17,14 +17,13 @@ $grid-columns: 12;
 $grid-gutter-y: 70px;
 $grid-gutter-x: 50px;
 $grid-gutter: 10px;
-$container-width: 1130px;
+$container-width: 1030px;
 .container {
-  padding: 0 $grid-gutter-x;
   margin: 0 auto;
   max-width: $container-width;
 }
-.section {
-  padding: $grid-gutter-y $grid-gutter-x;
+.py-70 {
+  padding: $grid-gutter-y 0;
 }
 .row {
   display: flex;

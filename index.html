@@ -25,7 +25,7 @@
             src="./asserts/images/logo.png"
             alt="header-logo"
         /></a>
-        <ul class="header-list">
+        <ul class="header-list flex align-center justify-between">
           <li class="header-list-item list-item">
             <a class="active" href="">Home</a>
           </li>
@@ -39,14 +39,14 @@
           <li class="header-list-item list-item"><a href="">Shotcodes</a></li>
           <li class="header-list-item list-item"><a href="">Shop</a></li>
           <li class="header-list-item list-item">
-            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            <i class="fa fa-search" aria-hidden="true"></i>
           </li>
         </ul>
       </div>
     </header>
     <main class="page-main">
       <section class="section-slider">
-        <div class="wrapper">
+        <div class="slideshow">
           <input type="radio" name="image-slide" checked="checked" />
           <div>
             <img
@@ -138,8 +138,8 @@
         </ul>
       </section>
       <section class="section-showcasing">
-        <div class="container section">
-          <h2 class="showcasing-title">
+        <div class="container py-70">
+          <h2 class="section-title">
             SHOWCASING YOUR WORK HAS NEVER BEEN MORE FUN
           </h2>
           <span class="hr">
@@ -175,39 +175,41 @@
         </div>
       </section>
       <section class="section-feature">
-        <div class="container section flex">
-          <div class="feature-img">
+        <div class="container py-70 flex">
+          <div class="feature-slider">
             <img
               class="img-feature"
               src="./asserts/images/feature1.jpg"
               alt="feature1"
             />
-            <ul class="img-list flex">
-              <li class="img-item">
+            <ul class="thumb-list flex">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature1.jpg" alt="feature1" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature2.jpg" alt="feature2" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature3.jpg" alt="feature3" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature4.jpg" alt="feature4" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature5.jpg" alt="feature5" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature6.jpg" alt="feature6" />
               </li>
-              <li class="img-item">
+              <li class="thumb-item">
                 <img src="./asserts/images/feature7.jpg" alt="feature7" />
               </li>
             </ul>
           </div>
           <div class="feature-content">
-            <h2 class="feature-content-title">SOME ENFOLD CORE FEATURES</h2>
+            <h2 class="feature-content-title section-title">
+              SOME ENFOLD CORE FEATURES
+            </h2>
             <span class="hr">
               <span class="hr-style"></span>
             </span>
@@ -216,23 +218,23 @@
               it incredible easy to build unique layouts by simply
               <strong>dragging and dropping</strong> your content into place.
             </p>
-            <ul class="feature-list">
-              <li class="feature-item">
+            <ul class="feature-content-list">
+              <li class="feature-content-item">
                 Layout Builder with dozens of easy to use elements
               </li>
-              <li class="feature-item">
+              <li class="feature-content-item">
                 Content Importer, to easily setup your site. With one click you
                 get a site very similar to the theme demo.
               </li>
-              <li class="feature-item">
+              <li class="feature-content-item">
                 Predefined Color schemes that can easily be edited right out of
                 your backend
               </li>
-              <li class="feature-item">
+              <li class="feature-content-item">
                 Lots of beautiful interactive elements like slideshows,
                 galleries, tabs, toggles that help you showcase your best work
               </li>
-              <li class="feature-item">
+              <li class="feature-content-item">
                 Works beautiful on modern high resolution displays: Smarthpones,
                 iPads, Retina MacBooks, etc
               </li>
@@ -247,9 +249,9 @@
         </div>
       </section>
       <section class="section-about avia-shadow">
-        <div class="container section flex">
+        <div class="container py-70 flex">
           <div class="about-left">
-            <h2 class="about-title">ABOUT US</h2>
+            <h2 class="section-title">ABOUT US</h2>
             <span class="hr">
               <span class="hr-style"></span>
             </span>
@@ -286,9 +288,7 @@
           </div>
           <ul class="about-right">
             <li class="about-item">
-              <div class="icon-item">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-              </div>
+              <i class="fa-solid fa-screwdriver-wrench icon-item"></i>
               <div class="about-content">
                 <h3 class="item-title">CRAFTED WITH LOVE</h3>
                 <p class="item-desc">
@@ -299,9 +299,7 @@
               </div>
             </li>
             <li class="about-item">
-              <div class="icon-item">
-                <i class="fa-solid fa-music"></i>
-              </div>
+              <i class="fa-solid fa-music icon-item"></i>
               <div class="about-content">
                 <h3 class="item-title">MELODICAL BY NATURE</h3>
                 <p class="item-desc">
@@ -311,9 +309,7 @@
               </div>
             </li>
             <li class="about-item">
-              <div class="icon-item">
-                <i class="fa fa-bolt" aria-hidden="true"></i>
-              </div>
+              <i class="fa fa-bolt icon-item" aria-hidden="true"></i>
               <div class="about-content">
                 <h3 class="item-title">LIGHTNING FAST</h3>
                 <p class="item-desc">
@@ -324,9 +320,10 @@
               </div>
             </li>
             <li class="about-item">
-              <div class="icon-item d-none-affter">
-                <i class="fa fa-flag" aria-hidden="true"></i>
-              </div>
+              <i
+                class="fa fa-flag icon-item d-none-affter"
+                aria-hidden="true"
+              ></i>
               <div class="about-content">
                 <h3 class="item-title">FREAKY FLAGS</h3>
                 <p class="item-desc">
@@ -340,14 +337,14 @@
         </div>
       </section>
       <section class="section-mobile">
-        <div class="container section section flex">
+        <div class="container py-70 flex">
           <img
             class="mobile-img"
             src="./asserts/images/iphoneIpad-495x400.png"
             alt=""
           />
           <div class="mobile-content flex flex-column justify-between">
-            <h2 class="mobile-title">MOBILE READY</h2>
+            <h2 class="section-title">MOBILE READY</h2>
             <span class="hr">
               <span class="hr-style"></span>
             </span>
@@ -374,114 +371,99 @@
         </div>
       </section>
       <section class="section-about-us">
-        <div class="container section">
-          <h2 class="about-us-title">WHAT OTHERS SAY ABOUT US</h2>
+        <div class="container py-70">
+          <h2 class="section-title about-us-title">WHAT OTHERS SAY ABOUT US</h2>
           <span class="hr">
             <span class="hr-style"></span>
           </span>
+          <ul class="about-us-content flex flex-wrap justify-center">
+            <li class="about-us-item">
+              <img src="./asserts/images/team-1-180x180.jpg" alt="" />
+              <div class="item-desc">
+                <p>
+                  Nulla consequat massa quis enim. Donec pede justo, fringilla
+                  vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                  ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis
+                  eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+                </p>
+                <h6 class="item-name">Martha M. Masters</h6>
+                <h6 class="item-position">
+                  Marketing – <strong>WikiTravel</strong>
+                </h6>
+              </div>
+            </li>
+            <li class="about-us-item">
+              <img src="./asserts/images/team-7-180x180.jpg" alt="" />
+              <div class="item-desc">
+                <p>
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium. Integer
+                  tincidunt. Cras dapibus.
+                </p>
+                <h6 class="item-name">Anna Vandana</h6>
+                <h6 class="item-position">CEO – <strong>Media Wiki</strong></h6>
+              </div>
+            </li>
 
-          <div class="about-us-content">
-            <div class="about-us-inner">
-              <div class="about-us-item">
-                <img src="./asserts/images/team-1-180x180.jpg" alt="" />
-                <div class="item-desc">
-                  <p>
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
-                    dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-                    dapibus.
-                  </p>
-                  <h6 class="item-name">Martha M. Masters</h6>
-                  <h6 class="item-position">
-                    Marketing – <strong>WikiTravel</strong>
-                  </h6>
-                </div>
-              </div>
-            </div>
-            <div class="about-us-inner">
-              <div class="about-us-item">
-                <img src="./asserts/images/team-7-180x180.jpg" alt="" />
-                <div class="item-desc">
-                  <p>
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                    justo. Nullam dictum felis eu pede mollis pretium. Integer
-                    tincidunt. Cras dapibus.
-                  </p>
-                  <h6 class="item-name">Anna Vandana</h6>
-                  <h6 class="item-position">
-                    CEO – <strong>Media Wiki</strong>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="about-us-content">
-            <div class="about-us-inner border-none">
-              <div class="about-us-item">
-                <img src="./asserts/images/team-11-180x180.jpg" alt="" />
+            <li class="about-us-item">
+              <img src="./asserts/images/team-11-180x180.jpg" alt="" />
 
-                <div class="item-desc">
-                  <p>
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu.
-                  </p>
-                  <h6 class="item-name">Maxi Milli</h6>
-                  <h6 class="item-position">
-                    Public Relations – <strong>Max Mobilcom</strong>
-                  </h6>
-                </div>
+              <div class="item-desc">
+                <p>
+                  Nulla consequat massa quis enim. Donec pede justo, fringilla
+                  vel, aliquet nec, vulputate eget, arcu.
+                </p>
+                <h6 class="item-name">Maxi Milli</h6>
+                <h6 class="item-position">
+                  Public Relations – <strong>Max Mobilcom</strong>
+                </h6>
               </div>
-            </div>
-            <div class="about-us-inner border-none">
-              <div class="about-us-item">
-                <img src="./asserts/images/team-5-180x180.jpg" alt="" />
+            </li>
+            <li class="about-us-item">
+              <img src="./asserts/images/team-5-180x180.jpg" alt="" />
 
-                <div class="item-desc">
-                  <p>
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                    justo. Nullam dictum felis eu pede mollis pretium. Integer
-                    tincidunt. Cras dapibus.
-                  </p>
-                  <h6 class="item-name">Dr. Dosist</h6>
-                  <h6 class="item-position">
-                    Dean of Medicine – <strong>Doom Inc</strong>
-                  </h6>
-                </div>
+              <div class="item-desc">
+                <p>
+                  In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium. Integer
+                  tincidunt. Cras dapibus.
+                </p>
+                <h6 class="item-name">Dr. Dosist</h6>
+                <h6 class="item-position">
+                  Dean of Medicine – <strong>Doom Inc</strong>
+                </h6>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="section-contact-us">
-        <div class="container section">
-          <h2 class="contact-us-title">IN CASE YOU NEED HELP</h2>
-          <p class="contact-us-title-desc">
-            Here are several ways to contact us
-          </p>
-          <div class="contact-us-content flex justify-between">
-            <div class="contact-us-box">
-              <i class="fa fa-question icon-contact-us" aria-hidden="true"></i>
-              <h3 class="contact-us-box-title">PRESALES QUESTION?</h3>
-              <p class="contact-us-box-desc">
+      <section class="section-contact">
+        <div class="container py-70">
+          <h2 class="contact-title">IN CASE YOU NEED HELP</h2>
+          <p class="contact-title-desc">Here are several ways to contact us</p>
+          <div class="contact-content flex justify-center">
+            <div class="contact-box">
+              <i class="fa fa-question icon-contact" aria-hidden="true"></i>
+              <h3 class="contact-box-title">PRESALES QUESTION?</h3>
+              <p class="contact-box-desc">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa.
               </p>
               <a href="#"><strong>Learn more</strong></a>
             </div>
-            <div class="contact-us-box">
-              <i class="fa-solid fa-circle-radiation icon-contact-us"></i>
-              <h3 class="contact-us-box-title">NEED SUPPORT?</h3>
-              <p class="contact-us-box-desc">
+            <div class="contact-box">
+              <i class="fa-solid fa-circle-radiation icon-contact"></i>
+              <h3 class="contact-box-title">NEED SUPPORT?</h3>
+              <p class="contact-box-desc">
                 Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
                 sem. Nulla consequat massa quis enim.
               </p>
               <a href="#"><strong>Learn more</strong></a>
             </div>
-            <div class="contact-us-box">
-              <i class="fa-solid fa-table-list icon-contact-us"></i>
-              <h3 class="contact-us-box-title">CHECK FORUM</h3>
-              <p class="contact-us-box-desc">
+            <div class="contact-box">
+              <i class="fa-solid fa-table-list icon-contact"></i>
+              <h3 class="contact-box-title">CHECK FORUM</h3>
+              <p class="contact-box-desc">
                 Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
                 arcu. In enim juserdiet a, venenatis vitae, justo.
               </p>
@@ -490,39 +472,37 @@
           </div>
         </div>
       </section>
-      <div class="section-brand">
-        <div class="container">
-          <ul class="brand-list flex justify-center">
-            <li class="brand-item">
-              <img src="./asserts/images/kriesi.png" alt="brand-item" />
-            </li>
-            <li class="brand-item">
-              <img src="./asserts/images/microlancer.png" alt="brand-item" />
-            </li>
-            <li class="brand-item">
-              <img src="./asserts/images/themeforest.png" alt="brand-item" />
-            </li>
-            <li class="brand-item">
-              <img src="./asserts/images/woocommerce.png" alt="brand-item" />
-            </li>
-            <li class="brand-item">
-              <img src="./asserts/images/wpml.png" alt="brand-item" />
-            </li>
-          </ul>
-        </div>
+      <div class="section-brand container">
+        <ul class="brand-list flex justify-center">
+          <li class="brand-item">
+            <img src="./asserts/images/kriesi.png" alt="brand-item" />
+          </li>
+          <li class="brand-item">
+            <img src="./asserts/images/microlancer.png" alt="brand-item" />
+          </li>
+          <li class="brand-item">
+            <img src="./asserts/images/themeforest.png" alt="brand-item" />
+          </li>
+          <li class="brand-item">
+            <img src="./asserts/images/woocommerce.png" alt="brand-item" />
+          </li>
+          <li class="brand-item">
+            <img src="./asserts/images/wpml.png" alt="brand-item" />
+          </li>
+        </ul>
       </div>
-        
-      <button id="scroll-top-link" class="btn-scroll"><i class="fa-solid fa-angle-up"></i></button>
+      <button id="scroll-top-link" class="btn-scroll">
+        <i class="fa-solid fa-angle-up"></i>
       </button>
     </main>
     <footer class="page-footer">
       <div class="container flex justify-center">
-        <div class="footer-left">
+        <div class="footer-col-1">
           <h4 class="footer-title">INTERESTING LINKS</h4>
-          <p class="footer-left-desc">
+          <p class="footer-col-1-desc">
             Bellow are some interesting links for you! Enjoy your stay :)
           </p>
-          <ul class="footer-left-socials">
+          <ul class="footer-col-1-socials flex">
             <li class="social-item flex align-center justify-between">
               <i class="fa-brands fa-twitter"></i>
               <h6 class="link-social">
@@ -539,24 +519,24 @@
             </li>
           </ul>
         </div>
-        <div class="footer-middle-one">
+        <div class="footer-col-2">
           <h4 class="footer-title">LATEST NEWS</h4>
-          <ul class="footer-middle-content">
-            <li class="content-item">
+          <ul class="footer-col-2-content image-list">
+            <li class="image-item">
               <img src="./asserts/images/footer1.jpg" alt="" />
               <p>
                 Postformat Gallery: Multiple images <br />
                 <span class="new-time">October 21, 2013 - 3:31 pm</span>
               </p>
             </li>
-            <li class="content-item">
+            <li class="image-item">
               <img src="./asserts/images/footer2.jpg" alt="" />
               <p>
                 Snowboarding is fun! <br />
                 <span class="new-time">December 12, 2012 - 9:11 pm</span>
               </p>
             </li>
-            <li class="content-item">
+            <li class="image-item">
               <img src="./asserts/images/footer3.jpg" alt="" />
               <p>
                 This is a standard post format with preview Picture <br />
@@ -565,37 +545,37 @@
             </li>
           </ul>
         </div>
-        <div class="footer-middle-two">
+        <div class="footer-col-3">
           <h4 class="footer-title">TAGS</h4>
-          <ul class="footer-middle-list">
-            <li class="list-item">are</li>
-            <li class="list-item">econ</li>
-            <li class="list-item">landscape</li>
-            <li class="list-item">lifestyle</li>
-            <li class="list-item">nice</li>
-            <li class="list-item">portrait</li>
-            <li class="list-item">some</li>
-            <li class="list-item">tags</li>
-            <li class="list-item">there</li>
+          <ul class="footer-col-3-list tag-list">
+            <li class="tag-item">are</li>
+            <li class="tag-item">econ</li>
+            <li class="tag-item">landscape</li>
+            <li class="tag-item">lifestyle</li>
+            <li class="tag-item">nice</li>
+            <li class="tag-item">portrait</li>
+            <li class="tag-item">some</li>
+            <li class="tag-item">tags</li>
+            <li class="tag-item">there</li>
           </ul>
           <h4 class="footer-title footer-title-category">CATEGORIES</h4>
-          <ul class="footer-middle-category-list">
-            <li class="list-item">Breaking News</li>
-            <li class="list-item">Economy</li>
-            <li class="list-item">Frontpage Article</li>
-            <li class="list-item">Health</li>
-            <li class="list-item">Lifestyle</li>
-            <li class="list-item">Music</li>
-            <li class="list-item">News</li>
-            <li class="list-item">Science</li>
+          <ul class="category-list">
+            <li class="category-item">Breaking News</li>
+            <li class="category-item">Economy</li>
+            <li class="category-item">Frontpage Article</li>
+            <li class="category-item">Health</li>
+            <li class="category-item">Lifestyle</li>
+            <li class="category-item">Music</li>
+            <li class="category-item">News</li>
+            <li class="category-item">Science</li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer-col-4">
           <h4 class="footer-title">BUSINESS HOURS</h4>
           <p>
             Our support Hotline is available 24 Hours a day: (555) 343 456 7891
           </p>
-          <ul class="footer-right-list">
+          <ul class="footer-col-4-list">
             <li class="list-item"><span>Monday-Friday</span>: 9am to 5pm</li>
             <li class="list-item"><span>Saturday</span>: 10am to 2pm</li>
             <li class="list-item"><span>Sunday</span>: Closed</li>
@@ -607,13 +587,13 @@
           <a class="footer-bottom-left"
             >© Copyright - Enfold Theme Demo - Enfold Theme by Kriesi</a
           >
-          <ul class="footer-bottom-right-list">
-            <li class="list-item"><a href="">Home</a></li>
-            <li class="list-item"><a href="">Help</a></li>
-            <li class="list-item"><a href="">Blogs</a></li>
-            <li class="list-item"><a href="">Features</a></li>
-            <li class="list-item"><a href="">Pages</a></li>
-            <li class="list-item"><a href="">Privacy Policy</a></li>
+          <ul class="sub-menu-list">
+            <li class="sub-menu-item"><a href="">Home</a></li>
+            <li class="sub-menu-item"><a href="">Help</a></li>
+            <li class="sub-menu-item"><a href="">Blogs</a></li>
+            <li class="sub-menu-item"><a href="">Features</a></li>
+            <li class="sub-menu-item"><a href="">Pages</a></li>
+            <li class="sub-menu-item"><a href="">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
