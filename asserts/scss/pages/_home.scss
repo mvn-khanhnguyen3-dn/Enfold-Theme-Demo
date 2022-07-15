@@ -270,19 +270,7 @@
         .card-item-link {
           position: relative;
         }
-        .image-overlay {
-          position: absolute;
-          background: #fff;
-          z-index: 300;
-          // opacity: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 10;
-          left: -5px;
-          top: 0px;
-          // overflow: hidden;
-          display: block;
-        }
+
         .item-desc {
           text-align: justify;
           font-size: convertPxToRem(13px);

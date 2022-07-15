@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.aa {
+  position: relative;
+  display: block;
+}
+.aa:hover .image-overlay {
+  opacity: 0.7;
+  visibility: visible;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+.image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: opacity 0.4s ease-in-out;
+}
